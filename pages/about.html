@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio -- About</title>
+
+  <!-- Tailwind CSS CDN -->
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- custom css link -->
+  <link rel="stylesheet" href="../src/css/style.css" />
+  <link rel="stylesheet" href="../src/css/output.css" />
+</head>
+
+<body class="bg-[#f9f7f1] text-gray-800">
+  <!-- COMMON SECTION -->
+
+  <!-- mobile menu -->
+  <div
+    class="max-w-full h-[100vh] bg-[#f9f7f1] fixed inset-0 z-40 overflow-auto transform -translate-y-full opacity-0 transition-all duration-500"
+    id="mobile__menu--section">
+    <!-- top area -->
+    <div class="flex justify-between py-3 px-4 border-b border-gray-300">
+      <div class="py-2">
+        <a href="../index.html" class="w-20 h-20 object-contain">
+          <img src="../src/images/logo.svg" alt="Logo" class="w-full h-full object-cover" />
+        </a>
+      </div>
+      <div>
+
+        <a id="close__Menu--Btn" href="javascript:void(0)"
+          class="text-shadow-black group duration-150 border w-10 h-10 rounded-full flex justify-center items-center border-black hover:bg-orange-500 hover:text-white hover:border-orange-500">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 18 18"
+            class="group-hover:fill-white duration-150">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M18 0L11.1686 8.99601L18 18L9.0041 11.1605L0 18L6.83156 8.99601L0 0L9.0041 6.83156L18 0Z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <!-- mobile menu list  -->
+    <div class="mt-8 px-5 lg:px-10">
+      <div class="container flex lg:flex-row flex-col justify-between">
+        <div class="basis-[60%]">
+          <ul>
+            <li class="px-4 py-3 border border-gray-300 border-b-0">
+              <a href="../index.html"
+                class="uppercase text-2xl md:text-3xl lg:text-3xl font-bold text-shadow-black">Home</a>
+            </li>
+            <li class="px-4 py-3 border border-gray-300 border-b-0">
+              <a href="about.html"
+                class="uppercase text-2xl md:text-3xl lg:text-3xl font-bold text-shadow-black mobile__menu--active">About</a>
+            </li>
+            <li class="px-4 py-3 border border-gray-300 border-b-0">
+              <a href="services.html"
+                class="uppercase text-2xl md:text-3xl lg:text-3xl font-bold text-shadow-black">Services</a>
+            </li>
+            <li class="px-4 py-3 border border-gray-300 border-b-0">
+              <a href="portfolio.html"
+                class="uppercase text-2xl md:text-3xl lg:text-3xl font-bold text-shadow-black">Protfolio</a>
+            </li>
+            <li class="px-4 py-3 border border-gray-300 border-b-0">
+              <a href="pricing.html"
+                class="uppercase text-2xl md:text-3xl lg:text-3xl font-bold text-shadow-black">Pircing</a>
+            </li>
+            <li class="px-4 py-3 border border-gray-300 border-b-0">
+              <a href="contact.html"
+                class="uppercase text-2xl md:text-3xl lg:text-3xl font-bold text-shadow-black">Contact</a>
+            </li>
+
+            <li class="relative px-4 py-3 border border-gray-300">
+              <!-- Main Button -->
+              <button onclick="toggleDropdown()"
+                class="uppercase text-2xl md:text-3xl lg:text-3xl font-bold text-shadow-black flex items-center justify-between w-full">
+                Others
+                <i id="dropdownIcon" class="fa-solid fa-chevron-right ml-2 transition-transform duration-300"></i>
+                <!-- Small arrow icon -->
+              </button>
+
+              <!-- Dropdown Menu -->
+              <div id="dropdownMenu"
+                class="absolute px-5 z-10 top-full left-0 w-full max-w-64 bg-[#f9f7f1] border border-gray-300 overflow-hidden max-h-0 transition-all duration-500 ease-in-out origin-top">
+                <a href="blog.html"
+                  class="block px-4 py-3 text-gray-500 uppercase text-2xl font-bold hover:text-black group">
+                  Blog
+                  <span>
+                    <i class="fa-solid fa-arrow-right text-sm rotate-[-45deg] group-hover:text-orange-500"></i>
+                  </span>
+                </a>
+                <a href="faq.html"
+                  class="block px-4 py-3 text-gray-500 uppercase text-2xl font-bold hover:text-black group">
+                  Faq
+                  <span>
+                    <i class="fa-solid fa-arrow-right text-sm rotate-[-45deg] group-hover:text-orange-500"></i>
+                  </span>
+                </a>
+                <a href="error.html"
+                  class="block px-4 py-3 text-gray-500 uppercase text-2xl font-bold hover:text-black group">
+                  Error
+                  <span>
+                    <i class="fa-solid fa-arrow-right text-sm rotate-[-45deg] group-hover:text-orange-500"></i>
+                  </span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="p-2 basis-[40%]">
+          <h3 class="font-bold text-3xl mb-6 text-shadow-black">
+            Get in Touch
+            <span><i class="fa-solid fa-arrow-right text-[15px] rotate-[-45deg]"></i></span>
+          </h3>
+          <div class="flex flex-col lg:px-3">
+            <div class="flex items-center mb-5">
+              <div
+                class="w-12 h-12 rounded-full border border-black flex justify-center items-center hover:bg-black hover:text-white duration-200">
+                <i class="fa-solid fa-phone-volume text-xl"></i>
+              </div>
+              <div class="flex flex-col ml-3">
+                <span class="text-md md:text-xl lg:text-sm font-medium text-gray-600">Phone</span>
+                <a href="#"
+                  class="font-medium text-md md:text-2xl lg:text-[18px] text-black hover:text-orange-500 duration-200">+938383474747</a>
+              </div>
+            </div>
+            <div class="flex items-center mb-5">
+              <div
+                class="w-12 h-12 rounded-full border border-black flex justify-center items-center hover:bg-black hover:text-white duration-200">
+                <i class="fa-solid fa-envelope text-xl"></i>
+              </div>
+              <div class="flex flex-col ml-3">
+                <span class="text-sm md:text-xl lg:text-sm font-medium text-gray-600">Email</span>
+                <a href="#"
+                  class="font-medium text-md md:text-2xl lg:text-[18px] text-black hover:text-orange-500 duration-200">info@gmail.com</a>
+              </div>
+            </div>
+            <div class="flex items-center mb-5">
+              <div
+                class="w-12 h-12 rounded-full border border-black flex justify-center items-center hover:bg-black hover:text-white duration-200">
+                <i class="fa-solid fa-location-dot text-xl"></i>
+              </div>
+              <div class="ml-3">
+                <a href="#"
+                  class="font-medium text-md md:text-2xl lg:text-[18px] text-black hover:text-orange-500 duration-200">Canada
+                  City, Office-02, Road-11,House-3B/B, Section-H</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- social link section -->
+    <div class="mt-3 px-5 md:px-10 lg:px-10">
+      <h4 class="text-black font-normal text-xl mb-2">
+        Social Link
+        <span><i class="fa-solid fa-arrow-right text-[15px] rotate-[-45deg]"></i></span>
+      </h4>
+      <div class="py-7 border-t border-gray-300">
+        <div class="flex gap-2 flex-wrap">
+          <a href="#"
+            class="py-1 px-4 border border-gray-300 rounded-3xl text-md hover:bg-orange-500 hover:text-white hover:border-orange-500 duration-100">
+            <i class="fa-brands fa-x-twitter text-sm"></i>
+            Twitter
+          </a>
+          <a href="#"
+            class="py-1 border px-4 border-gray-300 rounded-3xl text-md hover:bg-orange-500 hover:text-white hover:border-orange-500 duration-100">
+            <i class="fa-brands fa-instagram text-sm"></i>
+            Instagram
+          </a>
+          <a href="#"
+            class="py-1 px-4 border border-gray-300 rounded-3xl text-md hover:bg-orange-500 hover:text-white hover:border-orange-500 duration-100">
+            <i class="fa-brands fa-behance text-sm"></i>
+            Behance
+          </a>
+          <a href="#"
+            class="py-1 px-4 border border-gray-300 rounded-3xl text-md hover:bg-orange-500 hover:text-white hover:border-orange-500 duration-100">
+            <i class="fa-solid fa-basketball text-sm"></i>
+            Dribbble
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- COMMON SECTION -->
+
+  <!-- Layout Wrapper -->
+  <div class="flex min-h-screen">
+    <!-- Sidebar -->
+    <!-- COMMON SECTION -->
+    <aside
+      class="hidden xl:flex 2xl:flex flex-col justify-between items-center w-20 bg-[#f9f7f1] border-r border-r-black">
+      <div class="pt-5">
+        <a href="../index.html" class="w-20 h-20 object-contain">
+          <img src="../src/images/logo.svg" alt="Logo" class="w-full h-full object-cover" />
+        </a>
+      </div>
+      <div>
+        <a href="#" class=""><i class="fa-solid fa-moon text-3xl hover:text-orange-600"></i></a>
+      </div>
+      <div class="pb-6 flex flex-col gap-3 align-center w-full">
+        <!-- Top Icon (X) -->
+        <a href="#" class="flex flex-col items-center group">
+          <i class="fab fa-x-twitter text-2xl text-gray-500 group-hover:text-orange-500"></i>
+          <div class="w-[100%] h-px bg-gray-300 mt-8"></div>
+        </a>
+
+        <!-- Instagram -->
+        <a href="#" class="flex flex-col items-center group">
+          <i class="fab fa-instagram text-2xl text-gray-500 group-hover:text-orange-500"></i>
+          <div class="w-full h-px bg-gray-300 mt-8"></div>
+        </a>
+
+        <!-- Behance -->
+        <a href="#" class="flex flex-col items-center group">
+          <i class="fab fa-behance text-2xl text-gray-500 group-hover:text-orange-500"></i>
+          <div class="w-full h-px bg-gray-300 mt-8"></div>
+        </a>
+
+        <!-- Dribbble -->
+        <a href="#" class="flex flex-col items-center group">
+          <i class="fab fa-dribbble text-2xl text-gray-500 group-hover:text-orange-500"></i>
+          <!-- Last one: No Divider -->
+        </a>
+      </div>
+    </aside>
+    <!-- COMMON SECTION -->
+
+    <!-- Main Content -->
+    <main class="flex-1 flex flex-col justify-between">
+      <!-- Top Section -->
+      <section class="flex-1">
+        <!-- DYNAMIC SECTION -->
+        <div class="mb-20 md:mb-15 lg:mb-0 px-2 md:px-5 lg:px-0 flex flex-col lg:flex-row w-full h-full">
+          <div class="lg:basis-[40%] w-full grid place-items-center h-auto lg:h-full bg-[#FBDACF]">
+            <div class="p-5 flex justify-center items-center flex-col">
+              <!-- profile area -->
+              <div
+                class="w-[250px] h-[250px] md:w-[350px] md:h-[350px] lg:w-[250px] lg:h-[250px] xl:w-[350px] xl:h-[350px] 2xl:w-[350px] 2xl:h-[350px] rounded-full">
+                <img src="../src/images/profile-img.png" class="w-full h-full object-cover overflow-hidden rounded-full"
+                  alt="" />
+              </div>
+              <!-- profile info -->
+              <div class="mt-5">
+                <h3
+                  class="text-3xl md:text-5xl lg:text-3xl xl:text-5xl text-center font-bold text-black text-shadow-black">
+                  Charloote Amelia
+                </h3>
+                <h5 class="text-lg mt-5 text-center">
+                  I Am,
+                  <span class="bg-orange-500 text-white px-2 py-1 rounded font-semibold">UI/UX Designer</span>
+                </h5>
+                <!-- social link -->
+                <div class="flex gap-5 md:gap-8 lg:gap-10 mt-4 md:mt-8 lg:mt-10 justify-center">
+                  <a href="#"><i class="fab fa-x-twitter text-xl lg:text-2xl text-black hover:text-orange-500"></i></a>
+                  <a href="#"><i class="fab fa-instagram text-xl lg:text-2xl text-black hover:text-orange-500"></i>
+                  </a>
+                  <a href="#"><i class="fab fa-behance text-xl lg:text-2xl text-black hover:text-orange-500"></i></a>
+                  <a href="#"><i class="fab fa-dribbble text-xl lg:text-2xl text-black hover:text-orange-500"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:basis-[60%] py-5 w-full h-full lg:h-[93vh] bg-[#f5f3ef] overflow-y-hidden lg:overflow-y-auto xl:overflow-y-auto 2xl:overflow-y-auto">
+            <div class="px-2 md:px-5 lg:px-10">
+              <!-- about info -->
+              <div class="py-5">
+                <h3
+                  class="text-black text-3xl font-bold relative after:content-[''] after:block after:w-[120px] after:h-[2px] after:bg-black">
+                  About Me
+                </h3>
+                <p class="text-sm md:text-md lg:text-lg text-gray-500 py-7 text-justify">
+                  From Bangladesh, Dhaka. I have rich experience in UI/UX
+                  design, also I am good at Web Design. I love to talk with
+                  you about our unique. UI/UX services encompass a range of
+                  offerings aimed at enhancing user experiences and interfaces
+                  across digital products. Here are some key services
+                  typically provided by UI/UX designers. UI/UX services
+                  encompass a range of offerings aimed at enhancing user
+                  experiences and interfaces across digital products. Here are
+                  some key services typically provided by UI/UX designers
+                </p>
+                <!-- counter -->
+                <div class="py-5 flex flex-wrap gap-2 justify-between items-center">
+                  <div class="text-center min-w-[150px]">
+                    <h4 class="counter text-4xl font-extrabold mb-2" data-target="5">
+                      0
+                    </h4>
+                    <p class="text-sm text-gray-500 font-normal">
+                      Years Of Experience
+                    </p>
+                  </div>
+                  <div class="text-center min-w-[150px]">
+                    <h4 class="counter text-4xl font-extrabold mb-2" data-target="12">
+                      0
+                    </h4>
+                    <p class="text-sm text-gray-500 font-normal">Award Win</p>
+                  </div>
+                  <div class="text-center min-w-[150px]">
+                    <div class="flex justify-center text-center">
+                      <h4 class="counter text-4xl font-extrabold mb-2" data-target="10">
+                        0
+                      </h4>
+                      <span class="text-4xl font-extrabold">K</span>
+                    </div>
+                    <p class="text-sm text-gray-500 font-normal">
+                      Work Complete
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- skill info -->
+              <div class="py-5">
+                <h3
+                  class="text-black text-3xl font-bold relative after:content-[''] after:block after:w-[200px] after:h-[2px] after:bg-black">
+                  Professional Skil
+                </h3>
+                <div class="mt-16">
+                  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <!-- Left Column -->
+                    <div class="space-y-14">
+                      <!-- Skill Item -->
+                      <div class="flex items-center gap-4">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                          alt="Figma" class="w-10 h-10 p-1 bg-white rounded-md shadow" />
+                        <div class="flex-1">
+                          <div class="flex justify-between items-center mb-1">
+                            <span class="font-semibold">FIGMA</span>
+                            <span class="text-sm font-medium">98%</span>
+                          </div>
+                          <div class="w-full h-2 bg-gray-200 rounded-full">
+                            <div class="h-2 bg-black rounded-full relative" style="width: 98%">
+                              <div class="w-4 h-4 bg-orange-500 rounded-full absolute -right-2 -top-1"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Photoshop -->
+                      <div class="flex items-center gap-4">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg"
+                          alt="Photoshop" class="w-10 h-10 p-1 bg-white rounded-md shadow" />
+                        <div class="flex-1">
+                          <div class="flex justify-between items-center mb-1">
+                            <span class="font-semibold">PHOTOSHOP</span>
+                            <span class="text-sm font-medium">75%</span>
+                          </div>
+                          <div class="w-full h-2 bg-gray-200 rounded-full">
+                            <div class="h-2 bg-black rounded-full relative" style="width: 75%">
+                              <div class="w-4 h-4 bg-orange-500 rounded-full absolute -right-2 -top-1"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Webflow -->
+                      <div class="flex items-center gap-4">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webflow/webflow-original.svg"
+                          alt="Webflow" class="w-10 h-10 p-1 bg-white rounded-md shadow" />
+                        <div class="flex-1">
+                          <div class="flex justify-between items-center mb-1">
+                            <span class="font-semibold">WEBFLOW</span>
+                            <span class="text-sm font-medium">65%</span>
+                          </div>
+                          <div class="w-full h-2 bg-gray-200 rounded-full">
+                            <div class="h-2 bg-black rounded-full relative" style="width: 65%">
+                              <div class="w-4 h-4 bg-orange-500 rounded-full absolute -right-2 -top-1"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="space-y-14">
+                      <!-- Adobe XD -->
+                      <div class="flex items-center gap-4">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-plain.svg" alt="Adobe XD"
+                          class="w-10 h-10 p-1 bg-white rounded-md shadow" />
+                        <div class="flex-1">
+                          <div class="flex justify-between items-center mb-1">
+                            <span class="font-semibold">ADOBE XD</span>
+                            <span class="text-sm font-medium">82%</span>
+                          </div>
+                          <div class="w-full h-2 bg-gray-200 rounded-full">
+                            <div class="h-2 bg-black rounded-full relative" style="width: 82%">
+                              <div class="w-4 h-4 bg-orange-500 rounded-full absolute -right-2 -top-1"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Visual Studio -->
+                      <div class="flex items-center gap-4">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                          alt="Visual Studio" class="w-10 h-10 p-1 bg-white rounded-md shadow" />
+                        <div class="flex-1">
+                          <div class="flex justify-between items-center mb-1">
+                            <span class="font-semibold">VISUAL STUDIO</span>
+                            <span class="text-sm font-medium">73%</span>
+                          </div>
+                          <div class="w-full h-2 bg-gray-200 rounded-full">
+                            <div class="h-2 bg-black rounded-full relative" style="width: 73%">
+                              <div class="w-4 h-4 bg-orange-500 rounded-full absolute -right-2 -top-1"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Wordpress -->
+                      <div class="flex items-center gap-4">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg"
+                          alt="WordPress" class="w-10 h-10 p-1 bg-white rounded-md shadow" />
+                        <div class="flex-1">
+                          <div class="flex justify-between items-center mb-1">
+                            <span class="font-semibold">WORDPRESS</span>
+                            <span class="text-sm font-medium">95%</span>
+                          </div>
+                          <div class="w-full h-2 bg-gray-200 rounded-full">
+                            <div class="h-2 bg-black rounded-full relative" style="width: 95%">
+                              <div class="w-4 h-4 bg-orange-500 rounded-full absolute -right-2 -top-1"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- resume info -->
+              <div class="py-5">
+                <h3
+                  class="text-black text-3xl font-bold relative after:content-[''] after:block after:w-[100px] after:h-[2px] after:bg-black">
+                  Resume
+                </h3>
+                <div class="w-full mt-10">
+                  <!-- Section Title -->
+                  <div class="flex items-center space-x-2 mb-8">
+                    <span
+                      class="border border-b-4 border-r-4 border-orange-500 text-orange-500 italic px-4 py-1 rounded-full text-lg font-semibold">
+                      Education
+                    </span>
+                  </div>
+
+                  <!-- Accordion Item -->
+                  <div class="border-b-2 border-black py-4 flex items-center justify-between cursor-pointer mb-8"
+                    onclick="toggleAccordion('content1', 'icon1')">
+                    <h2 class="font-bold text-lg">HSC</h2>
+                    <div id="icon1"
+                      class="text-xl border-2 hover:text-orange-500 hover:border-orange-500 duration-75 border-black rounded-full w-8 h-8 flex items-center justify-center">
+                      <i class="fa-solid fa-plus"></i>
+                    </div>
+                  </div>
+                  <div id="content1" class="hidden pl-4 mt-2 mb-6 duration-75">
+                    <p class="italic text-gray-900 mb-2 text-xl">
+                      Subject Science
+                      <span class="float-right not-italic text-md text-gray-900">2014 - 2016</span>
+                    </p>
+                    <p class="text-gray-600">
+                      Higher Secondary Certificate (HSC) is a public
+                      examination taken by students in Bangladesh, Pakistan
+                      and in the states of Gujarat, Kerala, Tamil Nadu, Andhra
+                      Pradesh, Punjab, Maharashtra, West Bengal and Goa in
+                      India.
+                    </p>
+                  </div>
+
+                  <!-- Accordion Item -->
+                  <div class="border-b-2 mb-8 border-black py-4 flex items-center justify-between cursor-pointer"
+                    onclick="toggleAccordion('content2', 'icon2')">
+                    <h2 class="font-bold text-lg">
+                      Bachelor of Business Administration
+                    </h2>
+                    <div id="icon2"
+                      class="text-xl hover:text-orange-500 hover:border-orange-500 duration-75 border-2 border-black rounded-full w-8 h-8 flex items-center justify-center">
+                      <i class="fa-solid fa-plus"></i>
+                    </div>
+                  </div>
+                  <div id="content2" class="hidden pl-4 mt-2 mb-6">
+                    <p class="italic text-gray-900 text-xl mb-2">
+                      SUBJECT FINANCE
+                    </p>
+                    <p class="text-gray-900 text-md">
+                      The Bachelor of Business Administration (BBA) is a
+                      comprehensive undergraduate program designed to provide
+                      students with a strong foundation in business
+                      management, administration, and leadership. The program
+                      combines theoretical knowledge and practical skills to
+                      prepare students for diverse roles in the corporate,
+                      entrepreneurial, and global business landscapes.
+                    </p>
+                  </div>
+
+                  <!-- Accordion Item -->
+                  <div class="border-b-2 mb-8 border-black py-4 flex items-center justify-between cursor-pointer"
+                    onclick="toggleAccordion('content3', 'icon3')">
+                    <h2 class="font-bold text-lg">Master of Accounting</h2>
+                    <div id="icon3"
+                      class="text-xl border-2 hover:border-orange-500 hover:text-orange-500 duration-75 border-black rounded-full w-8 h-8 flex items-center justify-center">
+                      <i class="fa-solid fa-plus"></i>
+                    </div>
+                  </div>
+                  <div id="content3" class="hidden pl-4 mt-2 mb-6">
+                    <p class="italic text-gray-900 text-xl mb-2">
+                      Major in Financial Accounting
+                    </p>
+                    <p class="text-gray-900 text-md">
+                      The Master of Accounting (MAcc) is a graduate-level
+                      program designed to provide advanced knowledge and
+                      practical skills in accounting, finance, and business
+                      operations. The program prepares students for high-level
+                      accounting careers, emphasizing professional
+                      development, leadership, and expertise in financial
+                      management, auditing, taxation, and accounting systems.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- experience info -->
+              <div class="py-5">
+                <div class="w-full mt-5">
+                  <!-- Section Title -->
+                  <div class="flex items-center space-x-2 mb-8">
+                    <span
+                      class="border border-b-4 border-r-4 border-orange-500 text-orange-500 italic px-4 py-1 rounded-full text-lg font-semibold">
+                      Experience
+                    </span>
+                  </div>
+
+                  <!-- Accordion Item -->
+                  <div class="border-b-2 border-black py-4 flex items-center justify-between cursor-pointer mb-8"
+                    onclick="toggleAccordion('content4', 'icon4')">
+                    <h2 class="font-bold text-lg uppercase">
+                      Ui Head & Manager
+                    </h2>
+                    <div id="icon4"
+                      class="text-xl border-2 hover:text-orange-500 hover:border-orange-500 duration-75 border-black rounded-full w-8 h-8 flex items-center justify-center">
+                      <i class="fa-solid fa-plus"></i>
+                    </div>
+                  </div>
+                  <div id="content4" class="hidden pl-4 mt-2 mb-6 duration-75">
+                    <p class="italic text-gray-900 mb-2 text-xl">
+                      SOFT TECH INC.
+                      <span class="float-right not-italic text-md text-gray-900">2020 -
+                        <label class="text-orange-500 uppercase">Present</label></span>
+                    </p>
+                    <p class="text-gray-600">
+                      From Bangladesh, Dhaka. I have rich experience in UI/UX
+                      design, also I am good at Web Design. go to talk with
+                      you about our unique. UI/UX services encompass a range
+                      of offerings.
+                    </p>
+                  </div>
+
+                  <!-- Accordion Item -->
+                  <div class="border-b-2 border-black py-4 flex items-center justify-between cursor-pointer mb-8"
+                    onclick="toggleAccordion('content5', 'icon5')">
+                    <h2 class="font-bold text-lg uppercase">
+                      UI/UX SPECIALIST
+                    </h2>
+                    <div id="icon5"
+                      class="text-xl border-2 hover:text-orange-500 hover:border-orange-500 duration-75 border-black rounded-full w-8 h-8 flex items-center justify-center">
+                      <i class="fa-solid fa-plus"></i>
+                    </div>
+                  </div>
+                  <div id="content5" class="hidden pl-4 mt-2 mb-6 duration-75">
+                    <p class="italic text-gray-900 mb-2 text-xl">
+                      SOFT TECH INC.
+                      <span class="float-right not-italic text-md text-gray-900">2020 - 2023</span>
+                    </p>
+                    <p class="text-gray-600">
+                      From Bangladesh, Dhaka. I have rich experience in UI/UX
+                      design, also I am good at Web Design. go to talk with
+                      you about our unique. UI/UX services encompass a range
+                      of offerings.
+                    </p>
+                  </div>
+
+                  <!-- Accordion Item -->
+                  <div class="border-b-2 border-black py-4 flex items-center justify-between cursor-pointer mb-8"
+                    onclick="toggleAccordion('content6', 'icon6')">
+                    <h2 class="font-bold text-lg uppercase">
+                      PRODUCT DESIGNER
+                    </h2>
+                    <div id="icon6"
+                      class="text-xl border-2 hover:text-orange-500 hover:border-orange-500 duration-75 border-black rounded-full w-8 h-8 flex items-center justify-center">
+                      <i class="fa-solid fa-plus"></i>
+                    </div>
+                  </div>
+                  <div id="content6" class="hidden pl-4 mt-2 mb-6 duration-75">
+                    <p class="italic text-gray-900 mb-2 text-xl">
+                      SOFT TECH INC.
+                      <span class="float-right not-italic text-md text-gray-900">2016 - 2018</span>
+                    </p>
+                    <p class="text-gray-600">
+                      From Bangladesh, Dhaka. I have rich experience in UI/UX
+                      design, also I am good at Web Design. go to talk with
+                      you about our unique. UI/UX services encompass a range
+                      of offerings.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- client info -->
+              <div class="py-5">
+                <h3
+                  class="text-black text-3xl font-bold relative after:content-[''] after:block after:w-[200px] after:h-[2px] after:bg-black">
+                  Selected Clients
+                </h3>
+                <div class="mt-16 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4">
+                  <div class="p-2 border flex justify-center items-center">
+                    <div class="w-[140px]">
+                      <img src="../src/images/partner-logo1.png" alt="clientone" class="w-full h-full object-cover" />
+                    </div>
+                  </div>
+                  <div class="p-2 border flex justify-center items-center">
+                    <div class="w-[140px]">
+                      <img src="../src/images/partner-logo2 (1).png" alt="clientone"
+                        class="w-full h-full object-cover" />
+                    </div>
+                  </div>
+                  <div class="p-2 border flex justify-center items-center">
+                    <div class="w-[140px]">
+                      <img src="../src/images/partner-logo3.png" alt="clientone" class="w-full h-full object-cover" />
+                    </div>
+                  </div>
+                  <div class="p-2 border flex justify-center items-center">
+                    <div class="w-[140px]">
+                      <img src="../src/images/partner-logo4.png" alt="clientone" class="w-full h-full object-cover" />
+                    </div>
+                  </div>
+                  <div class="p-2 border flex justify-center items-center">
+                    <div class="w-[140px]">
+                      <img src="../src/images/partner-logo5.png" alt="clientone" class="w-full h-full object-cover" />
+                    </div>
+                  </div>
+                  <div class="p-2 border flex justify-center items-center">
+                    <div class="w-[140px]">
+                      <img src="../src/images/partner-logo6.png" alt="clientone" class="w-full h-full object-cover" />
+                    </div>
+                  </div>
+                  <div class="p-2 border flex justify-center items-center">
+                    <div class="w-[140px]">
+                      <img src="../src/images/partner-logo7.png" alt="clientone" class="w-full h-full object-cover" />
+                    </div>
+                  </div>
+                  <div class="p-2 border flex justify-center items-center">
+                    <div class="w-[140px]">
+                      <img src="../src/images/partner-logo8.png" alt="clientone" class="w-full h-full object-cover" />
+                    </div>
+                  </div>
+                  <div class="p-2 border flex justify-center items-center">
+                    <div class="w-[140px]">
+                      <img src="../src/images/partner-logo9.png" alt="clientone" class="w-full h-full object-cover" />
+                    </div>
+                  </div>
+                  <div class="p-2 border flex justify-center items-center">
+                    <div class="w-[140px]">
+                      <img src="../src/images/partner-logo10.png" alt="clientone" class="w-full h-full object-cover" />
+                    </div>
+                  </div>
+                  <div class="p-2 border flex justify-center items-center">
+                    <div class="w-[140px]">
+                      <img src="../src/images/partner-logo11.png" alt="clientone" class="w-full h-full object-cover" />
+                    </div>
+                  </div>
+
+                  <div class="p-2 border flex justify-center items-center">
+                    <div class="w-[140px]">
+                      <img src="../src/images/partner-logo12.png" alt="clientone" class="w-full h-full object-cover" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- testimonial info -->
+              <div class="py-5">
+                <h3
+                  class="text-black text-3xl font-bold relative after:content-[''] after:block after:w-[120px] after:h-[2px] after:bg-black">
+                  Testimonial
+                </h3>
+                <div class="mt-16">
+                  <!-- card one -->
+                  <div
+                    class="px-5 mb-5 py-10 flex flex-col gap-4 md:gap-0 lg:gap-0 md:flex-row lg:flex-row border-r-4 border-b-4 border-black rounded-md bg-white relative">
+                    <div class="basis-[30%]">
+                      <div class="flex justify-center flex-col items-center">
+                        <div class="w-20 h-20 mb-3 p-1 border-4 border-orange-400 rounded-full">
+                          <img src="../src/images/testimonial-author-img1.png" alt="hello"
+                            class="w-full h-full object-cover overflow-hidden rounded-full" />
+                        </div>
+                        <h4 class="text-center text-lg text-gray-800">
+                          Leslie Alexander
+                        </h4>
+                        <span class="text-sm text-gray-500 mt-2">CEO at Brodie</span>
+                      </div>
+                    </div>
+                    <div class="basis-[70%]">
+                      <div class="pa-3">
+                        <p class="text-md md:text-lg lg:text-lg text-justify text-gray-500">
+                          "I work with Md. Rofiqul Islam on many projects, he
+                          always tolda autonai exceeds my expectations with
+                          his quality full work and fastestopa Sedanl
+                          convallis magna vitae erosnon sollicitudin pulvinar
+                          service, very smoothai and simple wor
+                          communication."
+                        </p>
+                      </div>
+                    </div>
+                    <i class="fa-solid fa-quote-left absolute top-2 left-2 text-6xl text-orange-200"></i>
+                    <i class="fa-solid fa-quote-right absolute bottom-2 right-2 text-6xl text-orange-200"></i>
+                  </div>
+                  <!-- card two -->
+                  <div
+                    class="px-5 mb-5 py-10 flex flex-col gap-4 md:gap-0 lg:gap-0 md:flex-row lg:flex-row border-r-4 border-b-4 border-black rounded-md bg-white relative">
+                    <div class="basis-[30%]">
+                      <div class="flex justify-center flex-col items-center">
+                        <div class="w-20 h-20 mb-3 p-1 border-4 border-orange-400 rounded-full">
+                          <img src="../src/images/testimonial-author-img2.png" alt="hello"
+                            class="w-full h-full object-cover overflow-hidden rounded-full" />
+                        </div>
+                        <h4 class="text-center text-lg text-gray-800">
+                          Nasant Olivery
+                        </h4>
+                        <span class="text-sm text-gray-500 mt-2">CEO at Oliven</span>
+                      </div>
+                    </div>
+                    <div class="basis-[70%]">
+                      <div class="pa-3">
+                        <p class="text-md md:text-lg lg:text-lg text-justify text-gray-500">
+                          "I work with Md. Rofiqul Islam on many projects, he
+                          always tolda autonai exceeds my expectations with
+                          his quality full work and fastestopa Sedanl
+                          convallis magna vitae erosnon sollicitudin pulvinar
+                          service, very smoothai and simple wor
+                          communication."
+                        </p>
+                      </div>
+                    </div>
+                    <i class="fa-solid fa-quote-left absolute top-2 left-2 text-6xl text-orange-200"></i>
+                    <i class="fa-solid fa-quote-right absolute bottom-2 right-2 text-6xl text-orange-200"></i>
+                  </div>
+                  <!-- card three -->
+                  <div
+                    class="px-5 mb-5 py-10 flex flex-col gap-4 md:gap-0 lg:gap-0 md:flex-row lg:flex-row border-r-4 border-b-4 border-black rounded-md bg-white relative">
+                    <div class="basis-[30%]">
+                      <div class="flex justify-center flex-col items-center">
+                        <div class="w-20 h-20 mb-3 p-1 border-4 border-orange-400 rounded-full">
+                          <img src="../src/images/testimonial-author-img3.png" alt="hello"
+                            class="w-full h-full object-cover overflow-hidden rounded-full" />
+                        </div>
+                        <h4 class="text-center text-lg text-gray-800">
+                          Williams Henry
+                        </h4>
+                        <span class="text-sm text-gray-500 mt-2">CEO at Digicon</span>
+                      </div>
+                    </div>
+                    <div class="basis-[70%]">
+                      <div class="pa-3">
+                        <p class="text-md md:text-lg lg:text-lg text-justify text-gray-500">
+                          "I work with Md. Rofiqul Islam on many projects, he
+                          always tolda autonai exceeds my expectations with
+                          his quality full work and fastestopa Sedanl
+                          convallis magna vitae erosnon sollicitudin pulvinar
+                          service, very smoothai and simple wor
+                          communication."
+                        </p>
+                      </div>
+                    </div>
+                    <i class="fa-solid fa-quote-left absolute top-2 left-2 text-6xl text-orange-200"></i>
+                    <i class="fa-solid fa-quote-right absolute bottom-2 right-2 text-6xl text-orange-200"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- DYNAMIC SECTION -->
+      </section>
+      <!-- COMMON SECTION -->
+      <!-- Footer Navigation desktop -->
+      <footer class="hidden xl:flex 2xl:flex justify-between items-center">
+        <nav class="flex-1 flex" id="desktop__Nav--Menu">
+          <a href="../index.html"
+            class="group text-gray-600 border-t text-center border-black flex-1 px-3 py-4 font-medium desktop__nav--link">Home
+            <span><i
+                class="fa-solid fa-arrow-right text-md rotate-[-45deg] text-black group-hover:text-orange-500"></i></span></a>
+          <a href="about.html"
+            class="group text-gray-600 border border-r-0 border-b-0 text-center border-black flex-1 px-3 py-4 font-medium desktop__nav--link desktop__nav--active">About
+            <span><i
+                class="fa-solid fa-arrow-right text-md rotate-[-45deg] text-black group-hover:text-orange-500"></i></span></a>
+          <a href="services.html"
+            class="group text-gray-600 border border-r-0 border-b-0 text-center border-black flex-1 px-3 py-4 font-medium desktop__nav--link">Services
+            <span><i
+                class="fa-solid fa-arrow-right text-md rotate-[-45deg] text-black group-hover:text-orange-500"></i></span></a>
+          <a href="portfolio.html"
+            class="group text-gray-600 border border-r-0 border-b-0 text-center border-black flex-1 px-3 py-4 font-medium desktop__nav--link">Portfolio
+            <span><i
+                class="fa-solid fa-arrow-right text-md rotate-[-45deg] text-black group-hover:text-orange-500"></i></span></a>
+          <a href="pricing.html"
+            class="group text-gray-600 border border-r-0 border-b-0 text-center border-black flex-1 px-3 py-4 font-medium desktop__nav--link">Pricing
+            <span><i
+                class="fa-solid fa-arrow-right text-md rotate-[-45deg] text-black group-hover:text-orange-500"></i></span></a>
+          <a href="contact.html"
+            class="group text-gray-600 border border-r-0 border-b-0 text-center border-black flex-1 px-3 py-4 font-medium desktop__nav--link">Contact
+            <span><i
+                class="fa-solid fa-arrow-right text-md rotate-[-45deg] text-black group-hover:text-orange-500"></i></span></a>
+          <div class="relative group flex-1 cursor-pointer">
+            <a
+              class="group text-gray-600 border border-r-0 border-b-0 text-center group-hover:bg-black group-hover:text-white border-black px-3 py-4 font-medium desktop__nav--link flex items-center justify-center gap-2">
+              Others
+              <span>
+                <i class="fa-solid fa-arrow-right text-md rotate-[-45deg] text-black group-hover:text-orange-500"></i>
+              </span>
+            </a>
+
+            <!-- Dropdown -->
+            <div
+              class="absolute z-20 rounded-md rounded-tr-none rounded-bl-none rounded-br-none bottom-full right-0 max-w-64 w-full bg-[#f9f7f1] border border-black border-b-0 border-t-0 overflow-hidden max-h-0 group-hover:border-t group-hover:max-h-[600px] px-4 py-0 transition-all duration-500 ease-in-out">
+              <a href="blog.html"
+                class="block px-4 py-3 font-medium text-gray-600 hover:text-orange-500 border-b border-black">Blog
+                <span><i
+                    class="fa-solid fa-arrow-right text-md rotate-[-45deg] text-black group-hover:text-orange-500"></i></span>
+              </a>
+              <a href="faq.html"
+                class="block px-4 py-3 font-medium text-gray-600 hover:text-orange-500 border-b border-black">Faq
+                <span><i
+                    class="fa-solid fa-arrow-right text-md rotate-[-45deg] text-black group-hover:text-orange-500"></i></span>
+              </a>
+              <a href="error.html" class="block px-4 py-3 font-medium text-gray-600 hover:text-orange-500">Error
+                <span><i
+                    class="fa-solid fa-arrow-right text-md rotate-[-45deg] text-black group-hover:text-orange-500"></i></span>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </footer>
+      <!-- Footer Navigation mobile -->
+      <footer
+        class="text-center z-10 bg-[#f5f3ef] border-t border-black w-full fixed bottom-0 left-0 right-0 xl:hidden 2xl:hidden">
+        <div class="flex justify-between items-center py-4 px-6">
+          <div class="py-2">
+            <a href="../index.html" class="w-20 h-20 object-contain">
+              <img src="../src/images/logo.svg" alt="Logo" class="w-full h-full object-cover" />
+            </a>
+          </div>
+          <div class="flex items-center gap-3 space-x-5">
+            <a href="#" class="text-black hover:text-orange-500 pa-2"><i class="fa-solid fa-moon text-3xl"></i></a>
+            <a id="open__Menu--Btn" href="javascript:void(0)" class="text-black hover:text-orange-500 pa-2"><i
+                class="fa-solid fa-house-chimney-window text-3xl"></i></a>
+          </div>
+        </div>
+      </footer>
+      <!-- COMMON SECTION -->
+    </main>
+  </div>
+
+  <script src="../src/js/script.js"></script>
+</body>
+
+</html>

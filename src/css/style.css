@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.desktop__nav--link.desktop__nav--active {
+  background-color: black !important;
+  color: white !important;
+  /* border: 1px solid black !important; */
+  transition: 0.3s ease-in;
+  span i {
+    color: orangered !important;
+  }
+}
+
+.desktop__nav--link {
+  position: relative;
+  /* display: inline-block; */
+  color: #fff;
+  overflow: hidden;
+}
+
+.desktop__nav--link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.4s ease;
+  z-index: -1; /* Keep it behind the text */
+}
+
+.desktop__nav--link:hover::before {
+  transform: scaleY(1);
+  transform-origin: bottom;
+}
+
+.desktop__nav--link {
+  /* transition text color if you want */
+  transition: color 0.4s ease;
+}
+
+/* Optional: If you want text color to change on hover */
+.desktop__nav--link:hover {
+  color: white;
+}
+.desktop__nav--link:hover span {
+  color: orangered !important;
+}
+
+.mobile__menu--active {
+  color: orangered !important;
+}
+
+.sub__menu--active {
+  color: orangered !important;
+}

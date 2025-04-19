@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio -- About</title>
+
+    <!-- Tailwind CSS CDN -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <link rel="stylesheet" href="../src/css/output.css" />
+</head>
+
+<body class="bg-[#f9f7f1] text-gray-800">
+    <!-- COMMON SECTION -->
+
+    <!-- mobile menu -->
+    <div class="max-w-full h-[100vh] bg-[#f9f7f1] fixed inset-0 z-40 overflow-auto transform -translate-y-full opacity-0 transition-all duration-500"
+        id="mobile__menu--section">
+        <!-- top area -->
+        <div class="flex justify-between py-3 px-4 border-b border-gray-300">
+            <div class="py-2">
+                <a href="../index.html" class="w-20 h-20 object-contain">
+                    <img src="../src/images/logo.svg" alt="Logo" class="w-full h-full object-cover" />
+                </a>
+            </div>
+            <div>
+
+                <a id="close__Menu--Btn" href="javascript:void(0)"
+                    class="text-shadow-black group duration-150 border w-10 h-10 rounded-full flex justify-center items-center border-black hover:bg-orange-500 hover:text-white hover:border-orange-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 18 18"
+                        class="group-hover:fill-white duration-150">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M18 0L11.1686 8.99601L18 18L9.0041 11.1605L0 18L6.83156 8.99601L0 0L9.0041 6.83156L18 0Z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <!-- mobile menu list  -->
+        <div class="mt-8 px-5 lg:px-10">
+            <div class="container flex lg:flex-row flex-col justify-between">
+                <div class="basis-[60%]">
+                    <ul>
+                        <li class="px-4 py-3 border border-gray-300 border-b-0">
+                            <a href="../index.html"
+                                class="uppercase text-2xl md:text-3xl lg:text-3xl font-bold text-shadow-black">Home</a>
+                        </li>
+                        <li class="px-4 py-3 border border-gray-300 border-b-0">
+                            <a href="about.html"
+                                class="uppercase text-2xl md:text-3xl lg:text-3xl font-bold text-shadow-black mobile__menu--active">About</a>
+                        </li>
+                        <li class="px-4 py-3 border border-gray-300 border-b-0">
+                            <a href="services.html"
+                                class="uppercase text-2xl md:text-3xl lg:text-3xl font-bold text-shadow-black">Services</a>
+                        </li>
+                        <li class="px-4 py-3 border border-gray-300 border-b-0">
+                            <a href="portfolio.html"
+                                class="uppercase text-2xl md:text-3xl lg:text-3xl font-bold text-shadow-black">Protfolio</a>
+                        </li>
+                        <li class="px-4 py-3 border border-gray-300 border-b-0">
+                            <a href="pricing.html"
+                                class="uppercase text-2xl md:text-3xl lg:text-3xl font-bold text-shadow-black">Pircing</a>
+                        </li>
+                        <li class="px-4 py-3 border border-gray-300 border-b-0">
+                            <a href="contact.html"
+                                class="uppercase text-2xl md:text-3xl lg:text-3xl font-bold text-shadow-black">Contact</a>
+                        </li>
+
+                        <li class="relative px-4 py-3 border border-gray-300">
+                            <!-- Main Button -->
+                            <a href="javascript:void(0)" onclick="toggleDropdown()"
+                                class="uppercase text-2xl md:text-3xl lg:text-3xl font-bold text-shadow-black flex items-center justify-between w-full">
+                                Others
+                                <i id="dropdownIcon"
+                                    class="fa-solid fa-chevron-right ml-2 transition-transform duration-300"></i>
+                                <!-- Small arrow icon -->
+                            </a>
+
+                            <!-- Dropdown Menu -->
+                            <div id="dropdownMenu"
+                                class="absolute px-5 z-10 top-full left-0 w-full max-w-64 bg-white border border-gray-300 overflow-hidden max-h-0 transition-all duration-500 ease-in-out origin-top">
+                                <a href="blog.html"
+                                    class="block px-4 py-3 text-gray-500 uppercase text-2xl font-bold hover:text-black group">
+                                    Blog
+                                    <span>
+                                        <i
+                                            class="fa-solid fa-arrow-right text-sm rotate-[-45deg] group-hover:text-orange-500"></i>
+                                    </span>
+                                </a>
+                                <a href="faq.html"
+                                    class="block px-4 py-3 text-gray-500 uppercase text-2xl font-bold hover:text-black group">
+                                    Faq
+                                    <span>
+                                        <i
+                                            class="fa-solid fa-arrow-right text-sm rotate-[-45deg] group-hover:text-orange-500"></i>
+                                    </span>
+                                </a>
+                                <a href="error.html"
+                                    class="block px-4 py-3 text-gray-500 uppercase text-2xl font-bold hover:text-black group">
+                                    Error
+                                    <span>
+                                        <i
+                                            class="fa-solid fa-arrow-right text-sm rotate-[-45deg] group-hover:text-orange-500"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="p-2 basis-[40%]">
+                    <h3 class="font-bold text-3xl mb-6 text-shadow-black">
+                        Get in Touch
+                        <span><i class="fa-solid fa-arrow-right text-[15px] rotate-[-45deg]"></i></span>
+                    </h3>
+                    <div class="flex flex-col lg:px-3">
+                        <div class="flex items-center mb-5">
+                            <div
+                                class="w-12 h-12 rounded-full border border-black flex justify-center items-center hover:bg-black hover:text-white duration-200">
+                                <i class="fa-solid fa-phone-volume text-xl"></i>
+                            </div>
+                            <div class="flex flex-col ml-3">
+                                <span class="text-md md:text-xl lg:text-sm font-medium text-gray-600">Phone</span>
+                                <a href="#"
+                                    class="font-medium text-md md:text-2xl lg:text-[18px] text-black hover:text-orange-500 duration-200">+938383474747</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-5">
+                            <div
+                                class="w-12 h-12 rounded-full border border-black flex justify-center items-center hover:bg-black hover:text-white duration-200">
+                                <i class="fa-solid fa-envelope text-xl"></i>
+                            </div>
+                            <div class="flex flex-col ml-3">
+                                <span class="text-sm md:text-xl lg:text-sm font-medium text-gray-600">Email</span>
+                                <a href="#"
+                                    class="font-medium text-md md:text-2xl lg:text-[18px] text-black hover:text-orange-500 duration-200">info@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-5">
+                            <div
+                                class="w-12 h-12 rounded-full border border-black flex justify-center items-center hover:bg-black hover:text-white duration-200">
+                                <i class="fa-solid fa-location-dot text-xl"></i>
+                            </div>
+                            <div class="ml-3">
+                                <a href="#"
+                                    class="font-medium text-md md:text-2xl lg:text-[18px] text-black hover:text-orange-500 duration-200">Canada
+                                    City, Office-02, Road-11,House-3B/B, Section-H</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- social link section -->
+        <div class="mt-3 px-5 md:px-10 lg:px-10">
+            <h4 class="text-black font-normal text-xl mb-2">
+                Social Link
+                <span><i class="fa-solid fa-arrow-right text-[15px] rotate-[-45deg]"></i></span>
+            </h4>
+            <div class="py-7 border-t border-gray-300">
+                <div class="flex gap-2 flex-wrap">
+                    <a href="#"
+                        class="py-1 px-4 border border-gray-300 rounded-3xl text-md hover:bg-orange-500 hover:text-white hover:border-orange-500 duration-100">
+                        <i class="fa-brands fa-x-twitter text-sm"></i>
+                        Twitter
+                    </a>
+                    <a href="#"
+                        class="py-1 border px-4 border-gray-300 rounded-3xl text-md hover:bg-orange-500 hover:text-white hover:border-orange-500 duration-100">
+                        <i class="fa-brands fa-instagram text-sm"></i>
+                        Instagram
+                    </a>
+                    <a href="#"
+                        class="py-1 px-4 border border-gray-300 rounded-3xl text-md hover:bg-orange-500 hover:text-white hover:border-orange-500 duration-100">
+                        <i class="fa-brands fa-behance text-sm"></i>
+                        Behance
+                    </a>
+                    <a href="#"
+                        class="py-1 px-4 border border-gray-300 rounded-3xl text-md hover:bg-orange-500 hover:text-white hover:border-orange-500 duration-100">
+                        <i class="fa-solid fa-basketball text-sm"></i>
+                        Dribbble
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- COMMON SECTION -->
+
+    <!-- Layout Wrapper -->
+    <div class="flex min-h-screen">
+        <!-- Sidebar -->
+        <!-- COMMON SECTION -->
+        <aside
+            class="hidden xl:flex 2xl:flex flex-col justify-between items-center w-20 bg-[#f9f7f1] border-r border-r-black">
+            <div class="pt-5">
+                <a href="../index.html" class="w-20 h-20 object-contain">
+                    <img src="../src/images/logo.svg" alt="Logo" class="w-full h-full object-cover" />
+                </a>
+            </div>
+            <div>
+                <a href="#" class=""><i class="fa-solid fa-moon text-3xl hover:text-orange-600"></i></a>
+            </div>
+            <div class="pb-6 flex flex-col gap-3 align-center w-full">
+                <!-- Top Icon (X) -->
+                <a href="#" class="flex flex-col items-center group">
+                    <i class="fab fa-x-twitter text-2xl text-gray-500 group-hover:text-orange-500"></i>
+                    <div class="w-[100%] h-px bg-gray-300 mt-8"></div>
+                </a>
+
+                <!-- Instagram -->
+                <a href="#" class="flex flex-col items-center group">
+                    <i class="fab fa-instagram text-2xl text-gray-500 group-hover:text-orange-500"></i>
+                    <div class="w-full h-px bg-gray-300 mt-8"></div>
+                </a>
+
+                <!-- Behance -->
+                <a href="#" class="flex flex-col items-center group">
+                    <i class="fab fa-behance text-2xl text-gray-500 group-hover:text-orange-500"></i>
+                    <div class="w-full h-px bg-gray-300 mt-8"></div>
+                </a>
+
+                <!-- Dribbble -->
+                <a href="#" class="flex flex-col items-center group">
+                    <i class="fab fa-dribbble text-2xl text-gray-500 group-hover:text-orange-500"></i>
+                    <!-- Last one: No Divider -->
+                </a>
+            </div>
+        </aside>
+        <!-- COMMON SECTION -->
+
+        <!-- Main Content -->
+        <main class="flex-1 flex flex-col justify-between">
+            <!-- Top Section -->
+            <section class="flex-1">
+                <!-- DYNAMIC SECTION -->
+                <div class="mb-20 md:mb-15 lg:mb-0 px-2 md:px-5 lg:px-0 flex flex-col lg:flex-row w-full h-full">
+                    <div class="lg:basis-[40%] w-full h-auto lg:h-full">
+                        <div class="">
+                            <div class="px-0 md:px-0 lg:px-10 py-4">
+                                <ul class="flex gap-5">
+                                    <li><a href="../index.html"
+                                            class="text-md font-medium text-black hover:text-orange-500 hover:duration-300">Home</a>
+                                    </li>
+                                    <li
+                                        class="relative pl-4 text-md font-medium text-gray-700 before:content-[''] before:w-2 before:h-2 before:rounded-full before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:bg-orange-500">
+                                        NFT Portfolio
+                                    </li>
+                                    <!-- <li class="text-md font-medium text-black">NFT Portfolio</li> -->
+                                </ul>
+                            </div>
+                            <div class="w-full h-[70vh] md:h-[87vh] overflow-hidden">
+                                <img src="../src/images/portfolio-image-1.png" class="w-full h-full object-cover"
+                                    alt="nft-image">
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="lg:basis-[60%] py-12 w-full h-full lg:h-[93vh] bg-[#f5f3ef] overflow-y-hidden lg:overflow-y-auto xl:overflow-y-auto 2xl:overflow-y-auto">
+                        <div class="px-0 md:px-0 lg:px-20">
+                            <!-- nft info -->
+                            <div class="mb-10">
+                                <h2 class="text-3xl md:text-5xl text-black font-bold mb-5">NFT Portfolio</h2>
+                                <p class="text-md leading-[-4px] text-gray-500 font-normal">Project Overview Proin
+                                    egestas
+                                    ex sapien,
+                                    non porta lectus lobortis ac. Vestibulum ante ipsum primis in faucibus orci
+                                    luctus en ultrices posuere cubilia curae; Nullam finibus turpis turpis, a imperdiet
+                                    orci ornare sedat. Quisque
+                                    scelerisque libero diam, nec gravida mi placerat vel. Vestibulum ut nunc sed nunc
+                                    molestie congue. Cras eget nisl
+                                    inholet lorem facilisis viverra sed sit amet massa. Duisonabat fringilla consectetur
+                                    turpis, quis dictum tellus interdum
+                                    condimentum. In hac habitasse platea dictumst. Sed ut ultrices eros, eu tincidunt
+                                    ex. Nunc in gravida nibh, vestibulum
+                                    egestas purus. In nibh.....</p>
+                            </div>
+                            <!-- nft client -->
+                            <div
+                                class="py-5 md:py-10 grid grid-cols-1 md:grid-cols-4  border-t border-b border-gray-300">
+                                <div class="py-2 px-0 md:px-3 border-r border-orange-400">
+                                    <span class="text-sm text-orange-500 font-medium">Client:</span>
+                                    <h6 class="text-md text-gray-700 font-semibold mt-0.5 capitalize">Argova josen</h6>
+                                </div>
+                                <div class="px-0 md:px-3 border-r border-orange-400">
+                                    <span class="text-sm text-orange-500 font-medium">Location:</span>
+                                    <h6 class="text-md text-gray-700 font-semibold mt-0.5 capitalize">United Kingdom
+                                    </h6>
+                                </div>
+                                <div class="px-0 md:px-3 py-2 border-r border-orange-400">
+                                    <span class="text-sm text-orange-500 font-medium">Project Type:</span>
+                                    <h6 class="text-md text-gray-700 font-semibold mt-0.5 capitalize">Travel Agency
+                                        Website</h6>
+                                </div>
+                                <div class="px-0 md:px-3 py-2">
+                                    <span class="text-sm text-orange-500 font-medium">Duration:</span>
+                                    <h6 class="text-md text-gray-700 font-semibold mt-0.5 capitalize">6 Month</h6>
+                                </div>
+                            </div>
+                            <!-- banners -->
+                            <div class="py-5 md:py-10">
+                                <h3 class="text-3xl font-bold text-black">Project Overview</h3>
+                                <p class="text-md leading-[-2px] py-8 text-gray-500 font-normal">
+                                    Proin egestas ex sapien, non porta lectus lobortis ac. Vestibulum ante ipsum primis
+                                    in faucibus orci luctus en ultrices
+                                    posuere cubilia curae; Nullam finibus turpis turpis, a imperdiet orci ornare sedat.
+                                    Quisque scelerisque libero diam, nec
+                                    gravida mi placerat vel. Vestibulum ut nunc sed nunc molestie congue. Cras eget nisl
+                                    inholet lorem facilisis viverra sed
+                                    sit amet massa. Duisonabat fringilla consectetur turpis, quis dictum tellus interdum
+                                    condimentum. In hac habitasse
+                                    platea dictumst. Sed ut ultrices eros, eu tincidunt ex. Nunc in gravida nibh,
+                                    vestibulum egestas purus. In nibh sapien,
+                                    convallis nec pellentesque ac, rutrum nec diam</p>
+                                <p class="text-md leading-[-4px] text-gray-500 font-normal">
+                                    Libero diam, nec gravida mi placerat vel. Vestibulum ut nunc sed nunc molestie
+                                    congue. Cras eget nisl inhoet lorem
+                                    facilisis viverra sed sit amet massa. Duisonabat fringilla consectetur turpis, quis
+                                    dictum tellus interdum condimentum.
+                                    In hac habitasse platea dictumst. Sed ut ultrices eros, eu tincidunt ex. Nunc in
+                                    gravida nibh, vestibulum egestas purus.
+                                    In nibh sapien, convallis nec pellentesque ac, rutrum nec diam.</p>
+                                <div class="grid grid-cols-1 md:grid-cols-5 gap-4 max-w-6xl mx-auto pt-20">
+
+                                    <!-- Big Left Image -->
+                                    <div
+                                        class="overflow-hidden col-span-3 rounded-3xl md:rounded-[50px] md:rounded-tr-none md:rounded-br-none  h-[300px] md:h-full">
+                                        <img src="../src/images/portfolio-details-img2-1.jpg" alt="Main"
+                                            class="w-full h-full object-cover">
+                                    </div>
+
+                                    <!-- Right Side (2 Images) -->
+                                    <div class="grid grid-rows-2 gap-4 col-span-2">
+
+                                        <!-- Top Right Image -->
+                                        <div
+                                            class="overflow-hidden rounded-3xl  md:rounded-tr-[50px] md:rounded-tl-none md:rounded-bl-none md:rounded-br-none  h-[180px] md:h-full">
+                                            <img src="../src/images/portfolio-details-img3.jpg" alt="Top right"
+                                                class="w-full h-full object-cover">
+                                        </div>
+
+                                        <!-- Bottom Right Image -->
+                                        <div
+                                            class="overflow-hidden rounded-3xl md:rounded-br-[50px] md:rounded-tr-none md:rounded-bl-none md:rounded-tl-none h-[180px] md:h-full">
+                                            <img src="../src/images/portfolio-details-img4.jpg" alt="Bottom right"
+                                                class="w-full h-full object-cover">
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                            <!-- process -->
+                            <div class="py-5 md:py-10">
+                                <h3 class="text-3xl font-bold text-black">My Process</h3>
+                                <div class="grid mt-5 grid-cols-1 md:grid-cols-3 gap-4 ">
+                                    <div
+                                        class="p-5 group hover:border-orange-500 hover:duration-500 shadow-sm border-black border-r-4 border-b-4 rounded-2xl bg-white">
+                                        <div class="flex justify-between items-center">
+                                            <h6 class="text-md text-orange-500 font-medium">Step 01</h6>
+                                            <span>
+                                                <svg class="group-hover:fill-orange-500 opacity-15  group-hover:opacity-100 group-hover:scale-125 group-hover:duration-75"
+                                                    width="40" height="40" viewBox="0 0 40 40"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g>
+                                                        <path
+                                                            d="M2.5 13.75C2.33424 13.75 2.17527 13.8158 2.05806 13.9331C1.94085 14.0503 1.875 14.2092 1.875 14.375V16.875C1.875 17.0408 1.94085 17.1997 2.05806 17.3169C2.17527 17.4342 2.33424 17.5 2.5 17.5H3.86273C4.05873 18.3494 4.38375 19.1637 4.82648 19.9146L3.30805 21.433C3.25001 21.4911 3.20397 21.56 3.17256 21.6358C3.14114 21.7116 3.12498 21.7929 3.12498 21.875C3.12498 21.9571 3.14114 22.0384 3.17256 22.1142C3.20397 22.19 3.25001 22.2589 3.30805 22.317L5.18305 24.192C5.24108 24.25 5.30998 24.296 5.38582 24.3274C5.46165 24.3589 5.54292 24.375 5.625 24.375C5.70708 24.375 5.78835 24.3589 5.86418 24.3274C5.94001 24.296 6.00892 24.25 6.06695 24.192L7.58539 22.6735C8.33629 23.1162 9.15062 23.4413 10 23.6373V25.625C10 25.7908 10.0658 25.9497 10.1831 26.0669C10.3003 26.1842 10.4592 26.25 10.625 26.25H12.8164C13.2167 27.8027 13.9847 29.2363 15.0555 30.4297C16.1263 31.6232 17.4686 32.5415 18.9689 33.1072C20.4693 33.6729 22.0837 33.8694 23.6759 33.68C25.2681 33.4905 26.7914 32.9209 28.1172 32.019L34.2991 38.2009C34.4733 38.375 34.68 38.5131 34.9074 38.6073C35.1349 38.7015 35.3788 38.75 35.625 38.75C35.8712 38.75 36.1151 38.7015 36.3425 38.6073C36.57 38.5131 36.7767 38.375 36.9509 38.2009C37.125 38.0267 37.2631 37.82 37.3573 37.5925C37.4515 37.3651 37.5 37.1212 37.5 36.875C37.5 36.6288 37.4515 36.3849 37.3573 36.1574C37.2631 35.93 37.125 35.7233 36.9509 35.5491L30.7689 29.3672C32.1394 27.3543 32.7269 24.9098 32.4208 22.4939C32.1146 20.0781 30.9359 17.8574 29.1066 16.25H30C30.1658 16.25 30.3247 16.1842 30.4419 16.0669C30.5591 15.9497 30.625 15.7908 30.625 15.625V13.2391C30.7482 12.9125 32.5 8.25969 32.5 8.125C32.5 6.75062 32.1124 5.66625 31.3481 4.90187C30.5838 4.1375 29.4994 3.75 28.125 3.75C26.7506 3.75 25.6662 4.13758 24.9019 4.90187C24.1375 5.66617 23.75 6.75062 23.75 8.125C23.75 8.19992 25.625 13.2383 25.625 13.2383V14.2505C24.6167 13.9182 23.5617 13.7492 22.5 13.75H19.8873C19.6913 12.9006 19.3662 12.0863 18.9235 11.3354L20.442 9.81695C20.5 9.75892 20.546 9.69001 20.5774 9.61418C20.6089 9.53835 20.625 9.45708 20.625 9.375C20.625 9.29292 20.6089 9.21165 20.5774 9.13582C20.546 9.05998 20.5 8.99108 20.442 8.93305L18.567 7.05805C18.5089 7.00001 18.44 6.95397 18.3642 6.92256C18.2884 6.89114 18.2071 6.87498 18.125 6.87498C18.0429 6.87498 17.9616 6.89114 17.8858 6.92256C17.81 6.95397 17.7411 7.00001 17.683 7.05805L16.1646 8.57648C15.4137 8.13375 14.5994 7.80873 13.75 7.61273V5.625C13.75 5.45924 13.6842 5.30027 13.5669 5.18306C13.4497 5.06585 13.2908 5 13.125 5H10.625C10.4592 5 10.3003 5.06585 10.1831 5.18306C10.0658 5.30027 10 5.45924 10 5.625V7.61273C9.15062 7.80873 8.33629 8.13375 7.58539 8.57648L6.06695 7.05805C6.00892 7.00001 5.94001 6.95397 5.86418 6.92256C5.78835 6.89114 5.70708 6.87498 5.625 6.87498C5.54292 6.87498 5.46165 6.89114 5.38582 6.92256C5.30998 6.95397 5.24108 7.00001 5.18305 7.05805L3.30805 8.93305C3.25001 8.99108 3.20397 9.05998 3.17256 9.13582C3.14114 9.21165 3.12498 9.29292 3.12498 9.375C3.12498 9.45708 3.14114 9.53835 3.17256 9.61418C3.20397 9.69001 3.25001 9.75892 3.30805 9.81695L4.82648 11.3354C4.38375 12.0863 4.05873 12.9006 3.86273 13.75H2.5ZM36.067 36.4331C36.1264 36.4908 36.1737 36.5598 36.2063 36.636C36.2388 36.7122 36.2559 36.7941 36.2565 36.8769C36.2571 36.9598 36.2412 37.0419 36.2098 37.1185C36.1784 37.1952 36.132 37.2648 36.0734 37.3234C36.0148 37.382 35.9452 37.4283 35.8685 37.4598C35.7919 37.4912 35.7097 37.507 35.6269 37.5064C35.5441 37.5058 35.4622 37.4888 35.386 37.4562C35.3098 37.4237 35.2408 37.3763 35.1831 37.3169L29.1116 31.2455C29.4241 30.9694 29.7193 30.6742 29.9954 30.3616L36.067 36.4331ZM25.001 8.01437C25.038 6.01398 26.0887 5 28.125 5C30.1641 5 31.2145 6.01641 31.2491 8.02164C31.0734 8.50422 30.2192 10.7737 29.5679 12.5H26.683L25.001 8.01437ZM26.875 13.75H29.375V15H27.3366C27.1851 14.9159 27.0312 14.8357 26.875 14.7591V13.75ZM31.25 23.75C31.25 25.4803 30.737 27.1718 29.7758 28.6106C28.8146 30.0494 27.4484 31.1709 25.8499 31.8334C24.2514 32.4958 22.4923 32.6694 20.7952 32.3323C19.098 31.9952 17.5389 31.1624 16.3149 29.9393C15.091 28.7162 14.2572 27.1577 13.9189 25.4607C13.5806 23.7638 13.753 22.0046 14.4143 20.4057C15.0757 18.8067 16.1962 17.4397 17.6344 16.4776C19.0725 15.5154 20.7637 15.0012 22.494 15H22.5C24.8198 15.0026 27.0439 15.9253 28.6843 17.5657C30.3247 19.2061 31.2474 21.4302 31.25 23.75ZM11.875 18.75C11.2569 18.75 10.6527 18.5667 10.1388 18.2233C9.62494 17.88 9.2244 17.3919 8.98788 16.8209C8.75135 16.2499 8.68947 15.6215 8.81005 15.0153C8.93062 14.4092 9.22825 13.8523 9.66529 13.4153C10.1023 12.9783 10.6592 12.6806 11.2653 12.56C11.8715 12.4395 12.4999 12.5014 13.0709 12.7379C13.6419 12.9744 14.13 13.3749 14.4733 13.8888C14.8167 14.4027 15 15.0069 15 15.625C14.9991 16.4535 14.6695 17.2478 14.0837 17.8337C13.4978 18.4195 12.7035 18.7491 11.875 18.75ZM4.99148 14.4779C5.16323 13.4502 5.55402 12.4714 6.13734 11.608C6.22145 11.4876 6.2605 11.3415 6.24765 11.1952C6.23479 11.049 6.17085 10.9119 6.06703 10.808L4.63383 9.375L5.625 8.38383L7.05805 9.81695C7.16188 9.92077 7.29895 9.98471 7.44522 9.99757C7.59149 10.0104 7.73761 9.97137 7.85797 9.88727C8.72138 9.30394 9.70015 8.91315 10.7279 8.74141C10.8738 8.71706 11.0063 8.64175 11.1019 8.52889C11.1975 8.41602 11.25 8.27291 11.25 8.125V6.25H12.5V8.125C12.5 8.27292 12.5525 8.41606 12.6481 8.52894C12.7437 8.64182 12.8762 8.71713 13.0221 8.74148C14.0498 8.91323 15.0286 9.30402 15.892 9.88734C16.0124 9.97145 16.1585 10.0105 16.3048 9.99765C16.451 9.98479 16.5881 9.92085 16.692 9.81703L18.125 8.38383L19.1162 9.375L17.683 10.808C17.5792 10.9119 17.5153 11.049 17.5024 11.1952C17.4896 11.3415 17.5286 11.4876 17.6127 11.608C18.1958 12.471 18.5865 13.4493 18.7584 14.4766C17.8493 14.8451 16.9994 15.3452 16.2358 15.9609C16.2443 15.8498 16.25 15.7379 16.25 15.6246C16.2504 14.6952 15.9549 13.7898 15.4064 13.0395C14.8579 12.2893 14.0848 11.7331 13.1991 11.4515C12.3133 11.17 11.361 11.1777 10.4799 11.4735C9.59888 11.7693 8.83486 12.338 8.29854 13.097C7.76222 13.856 7.48143 14.7661 7.49685 15.6954C7.51227 16.6246 7.82309 17.5249 8.3843 18.2657C8.94551 19.0065 9.72797 19.5495 10.6184 19.8159C11.5087 20.0823 12.4608 20.0584 13.3367 19.7477C12.7835 21.0094 12.4986 22.3723 12.5 23.75C12.5001 24.1679 12.5262 24.5854 12.5781 25H11.25V23.125C11.25 22.9771 11.1975 22.8339 11.1019 22.7211C11.0063 22.6082 10.8738 22.5329 10.7279 22.5085C9.70015 22.3368 8.72138 21.946 7.85797 21.3627C7.73761 21.2785 7.59149 21.2395 7.44522 21.2523C7.29895 21.2652 7.16188 21.3292 7.05805 21.433L5.625 22.8662L4.63383 21.875L6.06695 20.442C6.17077 20.3381 6.23471 20.201 6.24757 20.0548C6.26043 19.9085 6.22138 19.7624 6.13727 19.642C5.55394 18.7786 5.16315 17.7998 4.99141 16.7721C4.96706 16.6262 4.89175 16.4937 4.77889 16.3981C4.66602 16.3025 4.52291 16.25 4.375 16.25H3.125V15H4.375C4.52292 15 4.66606 14.9475 4.77894 14.8519C4.89182 14.7563 4.96713 14.6238 4.99148 14.4779Z">
+                                                        </path>
+                                                        <path
+                                                            d="M21.316 3.47047C21.2419 3.61872 21.2297 3.79035 21.2821 3.9476C21.3345 4.10485 21.4472 4.23484 21.5955 4.30898L22.8455 4.93398C22.919 4.97145 22.9991 4.994 23.0814 5.00033C23.1636 5.00667 23.2463 4.99666 23.3247 4.97088C23.403 4.94511 23.4755 4.90408 23.5379 4.85016C23.6003 4.79624 23.6515 4.73049 23.6884 4.65672C23.7253 4.58294 23.7472 4.50259 23.7529 4.4203C23.7586 4.33802 23.7479 4.25541 23.7215 4.17726C23.6951 4.09911 23.6535 4.02695 23.5991 3.96495C23.5447 3.90295 23.4786 3.85233 23.4045 3.81602L22.1545 3.19102C22.0063 3.11688 21.8346 3.10468 21.6774 3.15709C21.5201 3.20949 21.3902 3.32222 21.316 3.47047ZM27.5 0.625V1.875C27.5 2.04076 27.5658 2.19973 27.6831 2.31694C27.8003 2.43415 27.9592 2.5 28.125 2.5C28.2908 2.5 28.4497 2.43415 28.5669 2.31694C28.6842 2.19973 28.75 2.04076 28.75 1.875V0.625C28.75 0.45924 28.6842 0.300269 28.5669 0.183058C28.4497 0.065848 28.2908 0 28.125 0C27.9592 0 27.8003 0.065848 27.6831 0.183058C27.5658 0.300269 27.5 0.45924 27.5 0.625ZM24.0955 0.691016C23.9472 0.765156 23.8345 0.895149 23.7821 1.0524C23.7297 1.20965 23.7419 1.38128 23.816 1.52953L24.441 2.77953C24.4773 2.85359 24.528 2.91973 24.59 2.97414C24.652 3.02854 24.7241 3.07014 24.8023 3.09652C24.8804 3.12291 24.963 3.13356 25.0453 3.12787C25.1276 3.12218 25.2079 3.10025 25.2817 3.06336C25.3555 3.02647 25.4212 2.97533 25.4752 2.91291C25.5291 2.85049 25.5701 2.77801 25.5959 2.69965C25.6217 2.6213 25.6317 2.53862 25.6253 2.45637C25.619 2.37413 25.5965 2.29395 25.559 2.22047L24.934 0.970469C24.8598 0.822221 24.7299 0.709495 24.5726 0.657087C24.4154 0.60468 24.2437 0.616885 24.0955 0.691016ZM31.316 0.970469L30.691 2.22047C30.6535 2.29395 30.631 2.37413 30.6247 2.45637C30.6183 2.53862 30.6283 2.6213 30.6541 2.69965C30.6799 2.77801 30.7209 2.85049 30.7748 2.91291C30.8288 2.97533 30.8945 3.02647 30.9683 3.06336C31.0421 3.10025 31.1224 3.12218 31.2047 3.12787C31.287 3.13356 31.3696 3.12291 31.4477 3.09652C31.5259 3.07014 31.598 3.02854 31.66 2.97414C31.722 2.91973 31.7727 2.85359 31.809 2.77953L32.434 1.52953C32.4715 1.45605 32.494 1.37587 32.5003 1.29363C32.5067 1.21138 32.4967 1.1287 32.4709 1.05035C32.4451 0.971989 32.4041 0.899511 32.3502 0.837088C32.2962 0.774665 32.2305 0.723533 32.1567 0.68664C32.0829 0.649747 32.0026 0.627823 31.9203 0.622131C31.838 0.616439 31.7554 0.627093 31.6773 0.653478C31.5991 0.679863 31.527 0.721457 31.465 0.775862C31.403 0.830268 31.3523 0.896407 31.316 0.970469ZM34.0955 3.19102L32.8455 3.81602C32.7714 3.85233 32.7053 3.90295 32.6509 3.96495C32.5965 4.02695 32.5549 4.09911 32.5285 4.17726C32.5021 4.25541 32.4914 4.33802 32.4971 4.4203C32.5028 4.50259 32.5247 4.58294 32.5616 4.65672C32.5985 4.73049 32.6497 4.79624 32.7121 4.85016C32.7745 4.90408 32.847 4.94511 32.9253 4.97088C33.0037 4.99666 33.0864 5.00667 33.1686 5.00033C33.2509 4.994 33.331 4.97145 33.4045 4.93398L34.6545 4.30898C34.7286 4.27267 34.7947 4.22205 34.8491 4.16005C34.9035 4.09805 34.9451 4.02589 34.9715 3.94774C34.9979 3.86959 35.0086 3.78698 35.0029 3.7047C34.9972 3.62241 34.9753 3.54206 34.9384 3.46828C34.9015 3.3945 34.8503 3.32876 34.7879 3.27484C34.7255 3.22092 34.653 3.17989 34.5747 3.15412C34.4963 3.12834 34.4136 3.11833 34.3314 3.12467C34.2491 3.131 34.169 3.15355 34.0955 3.19102ZM15 23.75C15 25.2334 15.4399 26.6834 16.264 27.9168C17.0881 29.1501 18.2594 30.1114 19.6299 30.6791C21.0003 31.2468 22.5083 31.3953 23.9632 31.1059C25.418 30.8165 26.7544 30.1022 27.8033 29.0533C28.8522 28.0044 29.5665 26.668 29.8559 25.2132C30.1453 23.7583 29.9968 22.2503 29.4291 20.8799C28.8614 19.5094 27.9001 18.3381 26.6668 17.514C25.4334 16.6899 23.9834 16.25 22.5 16.25C20.5116 16.2522 18.6052 17.0431 17.1992 18.4492C15.7931 19.8552 15.0022 21.7616 15 23.75ZM28.75 23.75C28.75 24.9861 28.3834 26.1945 27.6967 27.2223C27.0099 28.2501 26.0338 29.0512 24.8918 29.5242C23.7497 29.9973 22.4931 30.1211 21.2807 29.8799C20.0683 29.6388 18.9547 29.0435 18.0806 28.1694C17.2065 27.2953 16.6112 26.1817 16.3701 24.9693C16.1289 23.7569 16.2527 22.5003 16.7258 21.3582C17.1988 20.2162 17.9999 19.2401 19.0277 18.5533C20.0555 17.8666 21.2639 17.5 22.5 17.5C24.157 17.5019 25.7456 18.161 26.9173 19.3327C28.089 20.5044 28.7481 22.093 28.75 23.75Z">
+                                                        </path>
+                                                        <path
+                                                            d="M18.75 23.75C18.75 23.5842 18.6842 23.4253 18.5669 23.3081C18.4497 23.1908 18.2908 23.125 18.125 23.125C17.9592 23.125 17.8003 23.1908 17.6831 23.3081C17.5658 23.4253 17.5 23.5842 17.5 23.75C17.5015 25.0756 18.0288 26.3465 18.9661 27.2839C19.9035 28.2212 21.1744 28.7485 22.5 28.75C22.6658 28.75 22.8247 28.6842 22.9419 28.5669C23.0592 28.4497 23.125 28.2908 23.125 28.125C23.125 27.9592 23.0592 27.8003 22.9419 27.6831C22.8247 27.5658 22.6658 27.5 22.5 27.5C21.5058 27.4989 20.5526 27.1035 19.8496 26.4004C19.1465 25.6974 18.7511 24.7442 18.75 23.75Z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                        <h5 class="text-black text-xl font-semibold py-2">Research</h5>
+                                        <ul>
+                                            <li
+                                                class="relative pl-4 text-gray-500 text-sm font-normal py-1 before:content-[''] before:w-2 before:h-2 before:rounded-full  before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:bg-orange-500">
+                                                Brand Dezign
+                                            </li>
+                                            <li
+                                                class="relative pl-4 text-gray-500 text-sm font-normal py-1 before:content-[''] before:w-2 before:h-2 before:rounded-full  before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:bg-orange-500">
+                                                Web Development
+                                            </li>
+                                            <li
+                                                class="relative pl-4 text-gray-500 text-sm font-normal py-1 before:content-[''] before:w-2 before:h-2 before:rounded-full  before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:bg-orange-500">
+                                                Advertizing
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                    <div
+                                        class="p-5 group hover:border-orange-500 hover:duration-500 shadow-sm border-black border-r-4 border-b-4 rounded-2xl bg-white">
+                                        <div class="flex justify-between items-center">
+                                            <h6 class="text-md text-orange-500 font-medium">Step 02</h6>
+                                            <span>
+                                                <svg class="group-hover:fill-orange-500 opacity-15  group-hover:opacity-100 group-hover:scale-125 group-hover:duration-75"
+                                                    width="40" height="40" viewBox="0 0 40 40"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M0.5 12.394C0.5 12.6702 0.723858 12.894 1 12.894H39.8858C40.1619 12.894 40.3858 12.6702 40.3858 12.394C40.3858 12.1179 40.1619 11.894 39.8858 11.894H1C0.723858 11.894 0.5 12.1179 0.5 12.394Z">
+                                                        </path>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M8.12934 8.25684C7.28993 8.25684 6.60156 7.57018 6.60156 6.72769C6.60156 5.88519 7.28993 5.19854 8.12934 5.19854C8.9716 5.19854 9.65951 5.88556 9.65951 6.72769C9.65951 7.56981 8.9716 8.25684 8.12934 8.25684ZM5.60156 6.72769C5.60156 8.12263 6.73781 9.25684 8.12934 9.25684C9.52299 9.25684 10.6595 8.123 10.6595 6.72769C10.6595 5.33237 9.52299 4.19854 8.12934 4.19854C6.73781 4.19854 5.60156 5.33274 5.60156 6.72769Z">
+                                                        </path>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M23.2246 6.72769C23.2246 8.11985 24.3605 9.25684 25.7524 9.25684H33.3892C34.7811 9.25684 35.917 8.11985 35.917 6.72769C35.917 5.33562 34.7812 4.19854 33.3892 4.19854H25.7524C24.3605 4.19854 23.2246 5.33562 23.2246 6.72769ZM25.7524 8.25684C24.9134 8.25684 24.2246 7.56817 24.2246 6.72769C24.2246 5.88727 24.9134 5.19854 25.7524 5.19854H33.3892C34.2282 5.19854 34.917 5.88727 34.917 6.72769C34.917 7.56817 34.2282 8.25684 33.3892 8.25684H25.7524Z">
+                                                        </path>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M15.6157 8.25684C14.7763 8.25684 14.0879 7.57018 14.0879 6.72769C14.0879 5.88519 14.7763 5.19854 15.6157 5.19854C16.4579 5.19854 17.1458 5.88556 17.1458 6.72769C17.1458 7.56981 16.4579 8.25684 15.6157 8.25684ZM13.0879 6.72769C13.0879 8.12263 14.2241 9.25684 15.6157 9.25684C17.0093 9.25684 18.1458 8.123 18.1458 6.72769C18.1458 5.33237 17.0093 4.19854 15.6157 4.19854C14.2241 4.19854 13.0879 5.33274 13.0879 6.72769Z">
+                                                        </path>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M12.1865 26.6122C12.4551 26.6763 12.7248 26.5105 12.7889 26.2419L14.4974 19.0841C14.5615 18.8155 14.3957 18.5458 14.1271 18.4816C13.8585 18.4175 13.5888 18.5833 13.5247 18.8519L11.8163 26.0098C11.7522 26.2784 11.9179 26.5481 12.1865 26.6122Z">
+                                                        </path>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M17.613 25.853C17.8193 26.0366 18.1353 26.0181 18.3189 25.8118L20.7357 23.0955C21.0114 22.7872 21.0114 22.307 20.7357 21.9987C20.7354 21.9984 20.7351 21.998 20.7348 21.9977L18.3189 19.2823C18.1353 19.076 17.8193 19.0576 17.613 19.2411C17.4067 19.4247 17.3882 19.7407 17.5718 19.947L19.8851 22.5471L17.5718 25.1471C17.3882 25.3534 17.4067 25.6695 17.613 25.853Z">
+                                                        </path>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M8.70066 25.853C8.90696 25.6695 8.92541 25.3534 8.74185 25.1471L6.42854 22.5471L8.74185 19.947C8.92541 19.7407 8.90696 19.4247 8.70066 19.2411C8.49435 19.0576 8.17831 19.076 7.99475 19.2823L5.57899 21.9975C5.57867 21.9979 5.57836 21.9982 5.57804 21.9986C5.30211 22.3069 5.30211 22.7872 5.57804 23.0956L7.99475 25.8118C8.17831 26.0181 8.49435 26.0366 8.70066 25.853Z">
+                                                        </path>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M30.5129 39.9282C30.5129 40.7917 31.2171 41.4985 32.08 41.4985H33.6408C34.5035 41.4985 35.2079 40.7917 35.2079 39.9282V39.325C35.9017 39.1333 36.5692 38.8566 37.1953 38.5012L37.6174 38.9222C37.6177 38.9225 37.618 38.9228 37.6183 38.923C38.2282 39.5361 39.2251 39.5343 39.8358 38.9233L40.9357 37.82C40.936 37.8198 40.9355 37.8203 40.9357 37.82C41.5482 37.2099 41.5472 36.2121 40.9368 35.6012L40.5149 35.1791C40.868 34.5554 41.1434 33.8908 41.3351 33.2001H41.9308C42.7946 33.2001 43.5004 32.4948 43.5004 31.6324V30.0705C43.5004 29.208 42.7947 28.5026 41.9308 28.5026H41.3407C41.1486 27.8063 40.8713 27.1364 40.5148 26.5083L40.9357 26.0857C40.936 26.0854 40.9363 26.0852 40.9365 26.0849C41.5489 25.4747 41.5472 24.4777 40.9368 23.8668L39.8358 22.765C39.2251 22.154 38.2283 22.1521 37.6183 22.7651C37.618 22.7654 37.6177 22.7657 37.6174 22.766L37.1951 23.1871C36.5674 22.831 35.8916 22.5486 35.1788 22.3544V21.7746C35.1788 20.9103 34.4738 20.2042 33.6093 20.2042H32.0509C31.1849 20.2042 30.4839 20.9118 30.4839 21.7746V22.3727C29.7929 22.5677 29.1284 22.8465 28.5051 23.203L28.0888 22.7878C28.0885 22.7875 28.0882 22.7872 28.0879 22.7869C27.4779 22.1739 26.4811 22.1758 25.8704 22.7868L24.7695 23.8886C24.1591 24.4995 24.1573 25.4965 24.7697 26.1067C24.7699 26.1069 24.7702 26.1072 24.7705 26.1075L25.1973 26.5361C24.8487 27.1563 24.5767 27.8167 24.3875 28.5026H23.7898C22.9247 28.5026 22.2227 29.2094 22.2227 30.0705V31.6324C22.2227 32.4934 22.9248 33.2001 23.7898 33.2001H24.3904C24.5821 33.891 24.8581 34.5557 25.2122 35.179L24.7894 35.6006L24.7878 35.6022C24.1808 36.2131 24.1793 37.2092 24.7889 37.8191L25.8912 38.9222C25.8914 38.9224 25.891 38.9221 25.8912 38.9222C26.5012 39.5356 27.4987 39.5344 28.1095 38.9233L28.5313 38.5011C29.1488 38.8506 29.8136 39.1296 30.5129 39.3228V39.9282ZM32.08 40.4985C31.7716 40.4985 31.5129 40.2416 31.5129 39.9282V38.9331C31.5129 38.6995 31.3511 38.497 31.1233 38.4454C30.2609 38.2501 29.4493 37.9068 28.7182 37.4487C28.5206 37.3249 28.2637 37.3541 28.099 37.519L27.4022 38.2164C27.4022 38.2164 27.4022 38.2164 27.4022 38.2164C27.1806 38.438 26.8183 38.4365 26.6006 38.2174L26.5996 38.2164L25.4962 37.1122C25.2783 36.8941 25.2766 36.5298 25.4965 36.3077C25.4967 36.3075 25.4963 36.3079 25.4965 36.3077L26.1948 35.6113C26.3604 35.4461 26.3894 35.1883 26.2647 34.9905C25.7989 34.2521 25.4616 33.44 25.267 32.5887C25.215 32.3614 25.0128 32.2001 24.7795 32.2001H23.7898C23.479 32.2001 23.2227 31.9431 23.2227 31.6324V30.0705C23.2227 29.7596 23.4791 29.5026 23.7898 29.5026H24.7772C25.0106 29.5026 25.213 29.3411 25.2647 29.1134C25.4571 28.2669 25.7899 27.4586 26.2491 26.7222C26.372 26.5252 26.343 26.2694 26.1791 26.1048L25.4774 25.4002L25.4758 25.3986C25.2567 25.1805 25.2552 24.8173 25.4768 24.5954C25.4768 24.5954 25.4768 24.5954 25.4768 24.5954L26.5778 23.4937C26.7993 23.272 27.1617 23.2735 27.3793 23.4926L27.381 23.4942L28.0754 24.1868C28.241 24.3519 28.4989 24.3802 28.6963 24.255C29.4347 23.7867 30.2465 23.4459 31.0977 23.2469C31.3239 23.194 31.4839 22.9923 31.4839 22.76V21.7746C31.4839 21.4604 31.7409 21.2042 32.0509 21.2042H33.6093C33.9208 21.2042 34.1788 21.4619 34.1788 21.7746V22.7455C34.1788 22.9797 34.3414 23.1825 34.57 23.2335C35.4463 23.4289 36.267 23.7745 37.0069 24.2392C37.2042 24.3631 37.4609 24.3343 37.6259 24.1698L38.3269 23.4708C38.5445 23.2517 38.9069 23.2502 39.1284 23.4718C39.1284 23.4718 39.1284 23.4718 39.1284 23.4718M40.2294 24.5736C40.2294 24.5736 40.2294 24.5736 40.2294 24.5736L39.1284 23.4718ZM40.2294 24.5736C40.451 24.7955 40.4496 25.1587 40.2304 25.3768L40.2288 25.3784L39.5319 26.0781C39.3674 26.2433 39.3388 26.5001 39.463 26.6974C39.9307 27.4402 40.2689 28.2571 40.4633 29.1133C40.515 29.341 40.7174 29.5026 40.9509 29.5026H41.9308C42.2432 29.5026 42.5004 29.761 42.5004 30.0705V31.6324C42.5004 31.9417 42.2432 32.2001 41.9308 32.2001H40.946C40.7129 32.2001 40.5107 32.3613 40.4587 32.5885C40.2637 33.4398 39.927 34.252 39.4627 34.9913C39.3387 35.1888 39.3676 35.4458 39.5325 35.6107L40.2294 36.308C40.451 36.5298 40.4496 36.8931 40.2304 37.1112L40.229 37.1126L39.1284 38.2164C38.9069 38.4376 38.5444 38.4364 38.3269 38.2174L38.3252 38.2158L37.6259 37.5183C37.4608 37.3537 37.2037 37.325 37.0064 37.4493C36.2653 37.916 35.4506 38.2536 34.5969 38.4479C34.3693 38.4997 34.2079 38.7021 34.2079 38.9355V39.9282C34.2079 40.2416 33.9491 40.4985 33.6408 40.4985H32.08">
+                                                        </path>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M27.959 30.8527C27.959 33.5599 30.1525 35.7549 32.8606 35.7549C35.5665 35.7549 37.7598 33.5597 37.7598 30.8527C37.7598 28.1435 35.5667 25.948 32.8606 25.948C30.1523 25.948 27.959 28.1433 27.959 30.8527ZM32.8606 34.7549C30.7051 34.7549 28.959 33.0078 28.959 30.8527C28.959 28.695 30.7053 26.948 32.8606 26.948C35.0134 26.948 36.7598 28.6948 36.7598 30.8527C36.7598 33.008 35.0136 34.7549 32.8606 34.7549Z">
+                                                        </path>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M0.5 28.8986C0.5 31.1771 2.07658 33.2002 4.17954 33.2002H9.23208C9.50823 33.2002 9.73208 32.9763 9.73208 32.7002C9.73208 32.4241 9.50823 32.2002 9.23208 32.2002H4.17954C2.78864 32.2002 1.5 30.7995 1.5 28.8986V4.80014C1.5 2.89684 2.78613 1.4985 4.17954 1.4985H36.7062C38.0994 1.4985 39.3858 2.89902 39.3858 4.80014V23.5229C39.3858 23.7991 39.6096 24.0229 39.8858 24.0229C40.1619 24.0229 40.3858 23.7991 40.3858 23.5229V4.80014C40.3858 2.52193 38.812 0.498505 36.7062 0.498505H4.17954C2.07397 0.498505 0.5 2.51932 0.5 4.80014V28.8986ZM16.3617 32.7002C16.3617 32.9763 16.5855 33.2002 16.8617 33.2002H23.7894C24.0656 33.2002 24.2894 32.9763 24.2894 32.7002C24.2894 32.4241 24.0656 32.2002 23.7894 32.2002H16.8617C16.5855 32.2002 16.3617 32.4241 16.3617 32.7002Z">
+                                                        </path>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M12.5547 32.7002C12.5547 32.9763 12.7785 33.2002 13.0547 33.2002H13.0716C13.3478 33.2002 13.5716 32.9763 13.5716 32.7002C13.5716 32.4241 13.3478 32.2002 13.0716 32.2002H13.0547C12.7785 32.2002 12.5547 32.4241 12.5547 32.7002Z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                        <h5 class="text-black text-xl font-semibold py-2">Design</h5>
+                                        <ul>
+                                            <li
+                                                class="relative pl-4 text-gray-500 text-sm font-normal py-1 before:content-[''] before:w-2 before:h-2 before:rounded-full  before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:bg-orange-500">
+                                                Visual Identity
+                                            </li>
+                                            <li
+                                                class="relative pl-4 text-gray-500 text-sm font-normal py-1 before:content-[''] before:w-2 before:h-2 before:rounded-full  before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:bg-orange-500">
+                                                User Interface
+                                            </li>
+                                            <li
+                                                class="relative pl-4 text-gray-500 text-sm font-normal py-1 before:content-[''] before:w-2 before:h-2 before:rounded-full  before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:bg-orange-500">
+                                                Creative Campaign
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                    <div
+                                        class="p-5 group hover:border-orange-500 hover:duration-500 shadow-sm border-black border-r-4 border-b-4 rounded-2xl bg-white">
+                                        <div class="flex justify-between items-center">
+                                            <h6 class="text-md text-orange-500 font-medium">Step 02</h6>
+                                            <span>
+                                                <svg class="group-hover:fill-orange-500 opacity-15  group-hover:opacity-100 group-hover:scale-125 group-hover:duration-75"
+                                                    width="40" height="40" viewBox="0 0 40 40"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g>
+                                                        <path
+                                                            d="M39.988 0.459335C39.9875 0.452196 39.9856 0.445627 39.9849 0.438678C39.9833 0.42457 39.9812 0.410533 39.9785 0.396603C39.9766 0.387274 39.9759 0.377564 39.9734 0.368426C39.9714 0.36062 39.9683 0.353481 39.9659 0.34596C39.9622 0.334052 39.958 0.322301 39.9533 0.310739C39.9498 0.302172 39.9471 0.293223 39.9432 0.284942C39.9389 0.275993 39.9338 0.267617 39.9291 0.259049C39.9241 0.249971 39.9188 0.24108 39.9132 0.232395C39.9083 0.224684 39.9037 0.216879 39.8985 0.209549C39.8918 0.200456 39.8847 0.191629 39.8773 0.183085C39.8657 0.169261 39.8535 0.156043 39.8405 0.143485C39.8317 0.135223 39.8225 0.127285 39.8131 0.119687C39.8067 0.11435 39.8002 0.109145 39.7936 0.104075C39.7861 0.098649 39.7785 0.0936989 39.7707 0.0885585C39.7602 0.0818905 39.7494 0.0756037 39.7385 0.0697103C39.7314 0.0659026 39.7248 0.0617141 39.7176 0.0582871C39.7088 0.0540986 39.6996 0.0509573 39.6905 0.0472447C39.6786 0.0425071 39.6665 0.0382203 39.6542 0.0343937C39.6471 0.0322042 39.6404 0.0290629 39.6331 0.027159C39.6232 0.0245888 39.6127 0.0235417 39.6026 0.0216378C39.5898 0.0191847 39.5769 0.017216 39.5639 0.0157358C39.5563 0.0148791 39.5491 0.0126897 39.5413 0.0122137C39.5393 0.0121185 39.5235 0.0111666 39.4966 0.0100243C39.1177 -0.00787202 36.4782 -0.0890717 32.8177 0.831159C32.712 0.857396 32.6066 0.884463 32.5014 0.912359C32.4225 0.933016 32.3432 0.954339 32.2636 0.975948C32.2253 0.986324 32.1871 0.996605 32.1486 1.00727C32.0229 1.04186 31.8975 1.0773 31.7723 1.1136L31.7713 1.11398C27.5269 2.34749 21.4505 5.19033 16.4764 11.7288C14.9179 11.5198 12.1139 11.4582 9.09177 12.8993C5.14469 14.7814 2.09566 18.5792 0.0294001 24.1873C-0.00655986 24.2853 -0.00933281 24.3924 0.0215079 24.4921C0.0523485 24.5918 0.115094 24.6786 0.200093 24.7392C0.285091 24.7997 0.387634 24.8307 0.491946 24.8273C0.596259 24.8239 0.696562 24.7863 0.777427 24.7203C0.839969 24.6693 6.86902 19.799 11.3225 21.115C11.1316 21.6081 10.9488 22.1044 10.7743 22.6036L10.557 22.3864C10.4677 22.2971 10.3467 22.247 10.2204 22.247C10.0942 22.247 9.97313 22.2971 9.88387 22.3864L8.57592 23.6943C8.53172 23.7385 8.49665 23.791 8.47273 23.8487C8.4488 23.9064 8.43649 23.9683 8.43649 24.0308C8.43649 24.0933 8.4488 24.1552 8.47273 24.213C8.49665 24.2707 8.53172 24.3232 8.57592 24.3673L9.61895 25.4104L7.92842 27.101C7.88422 27.1452 7.84915 27.1976 7.82522 27.2554C7.8013 27.3131 7.78899 27.375 7.78899 27.4375C7.78899 27.5 7.8013 27.5619 7.82522 27.6196C7.84915 27.6774 7.88422 27.7298 7.92842 27.774L12.2261 32.0717C12.2702 32.116 12.3227 32.1511 12.3805 32.175C12.4382 32.199 12.5002 32.2112 12.5627 32.2112C12.6252 32.2112 12.6872 32.1989 12.7449 32.175C12.8027 32.1511 12.8552 32.116 12.8993 32.0717L14.5899 30.3812L15.6324 31.4236C15.6765 31.4679 15.729 31.503 15.7868 31.5269C15.8445 31.5509 15.9065 31.5632 15.969 31.5631C16.0908 31.5631 16.2126 31.5166 16.3056 31.4236L17.6135 30.1157C17.6578 30.0715 17.6928 30.019 17.7167 29.9613C17.7407 29.9035 17.753 29.8417 17.753 29.7792C17.753 29.7167 17.7407 29.6548 17.7167 29.597C17.6928 29.5393 17.6578 29.4868 17.6135 29.4427L17.3967 29.2258C17.8959 29.0513 18.3922 28.8686 18.8853 28.6776C20.2012 33.131 15.331 39.1602 15.2799 39.2226C15.2229 39.2924 15.1869 39.3769 15.176 39.4663C15.1651 39.5557 15.1798 39.6463 15.2184 39.7277C15.257 39.8091 15.3179 39.8779 15.394 39.9261C15.4701 39.9743 15.5583 39.9999 15.6484 39.9999C15.7033 39.9999 15.7589 39.9904 15.8128 39.9705C21.4209 37.9043 25.2188 34.8553 27.101 30.9082C28.5421 27.8862 28.4806 25.0821 28.2715 23.5237C34.8105 18.5492 37.6534 12.4723 38.8868 8.22794C40.1694 3.81289 39.996 0.594128 39.988 0.459335ZM1.52898 22.9916C3.47263 18.4592 6.14974 15.3569 9.50139 13.7587C11.9948 12.5698 14.3254 12.4833 15.8265 12.6147C14.2218 14.8763 12.8286 17.4318 11.6765 20.2281C8.04446 19.0949 3.69414 21.5285 1.52898 22.9916ZM12.5625 31.0623L8.93785 27.4377L10.2919 26.0836L13.9166 29.7082L12.5625 31.0623ZM15.9687 30.4142L14.9265 29.372L14.9263 29.3717L14.9262 29.3715L10.6288 25.0742L10.6286 25.0739L10.6284 25.0737L9.58564 24.0309L10.2205 23.3961L16.1872 29.3629L16.1878 29.3635L16.6037 29.7793L15.9687 30.4142ZM26.2416 30.4988C24.6434 33.8504 21.5411 36.5274 17.0086 38.4711C18.4718 36.3061 20.9052 31.9557 19.7723 28.3238C22.5686 27.1716 25.124 25.7785 27.3857 24.1737C27.5171 25.6748 27.4305 28.0055 26.2416 30.4988ZM27.4748 22.933C25.0105 24.7739 22.1578 26.3484 18.9956 27.6128L18.9947 27.6131C18.2411 27.9143 17.4518 28.2034 16.6469 28.4763L11.5241 23.3534C11.7965 22.5496 12.0858 21.7602 12.3875 21.0047C13.6519 17.8426 15.2265 14.9898 17.0673 12.5255C21.7218 6.29505 27.4085 3.46544 31.531 2.18119C31.8566 3.72703 32.6138 5.12731 33.7433 6.25687C34.8729 7.38643 36.2733 8.1436 37.8191 8.46925C36.5349 12.592 33.7053 18.2785 27.4748 22.933ZM39.0461 1.07961L39.0459 1.1096C39.0454 1.15533 39.0448 1.20105 39.044 1.24677C39.0431 1.29408 39.042 1.3433 39.0407 1.3948L39.0402 1.4146C39.0389 1.45867 39.0376 1.50455 39.036 1.55158L39.0342 1.59984C39.0325 1.64239 39.0308 1.68618 39.0288 1.73092L39.0269 1.77585C39.0243 1.83506 39.0212 1.89599 39.0178 1.95901L39.016 1.9909C39.0119 2.06578 39.0073 2.14063 39.0023 2.21546C38.9989 2.26657 38.9953 2.31865 38.9915 2.37176C38.9901 2.39071 38.9888 2.40927 38.9873 2.4285C38.982 2.4997 38.9764 2.57233 38.97 2.64687L38.967 2.68143C38.9615 2.7453 38.9557 2.81041 38.9494 2.87667C38.9473 2.90027 38.945 2.92417 38.9427 2.94806C38.9369 3.00765 38.9308 3.06819 38.9245 3.12959L38.9177 3.19509C38.9075 3.29059 38.8968 3.38604 38.8856 3.48143C38.8767 3.55596 38.8675 3.63174 38.8578 3.70846L38.8477 3.787C38.8386 3.8563 38.8293 3.92557 38.8198 3.9948C38.8165 4.01841 38.8134 4.04173 38.81 4.06553C38.7831 4.25723 38.7541 4.44862 38.7228 4.63964C38.7183 4.66744 38.7136 4.69533 38.709 4.72332C38.692 4.82597 38.6744 4.92852 38.6562 5.03098C38.6381 5.13379 38.6191 5.23764 38.5991 5.34302L38.5948 5.36511C38.5707 5.49235 38.5456 5.61941 38.5195 5.74626C38.5022 5.8305 38.4844 5.91542 38.466 6.00109C38.4603 6.02755 38.4548 6.05392 38.449 6.08048C38.4245 6.19321 38.3993 6.30579 38.3735 6.41823L38.37 6.43355C38.3168 6.66327 38.2608 6.89233 38.202 7.12066C38.1947 7.14902 38.1876 7.1772 38.1802 7.20566C38.1502 7.32085 38.1192 7.43689 38.087 7.55397C36.6933 7.27487 35.4312 6.5989 34.4158 5.58357C33.4006 4.56834 32.7246 3.30618 32.4456 1.91246C32.5644 1.87986 32.6835 1.84806 32.8027 1.81707L32.8539 1.80394C32.9629 1.77576 33.0714 1.74844 33.1788 1.72207L33.2169 1.71265C35.99 1.03592 38.1576 0.953863 39.046 0.953958L39.0461 0.963001C39.0466 0.963953 39.0466 0.96481 39.0466 0.965476C39.0466 1.00127 39.0464 1.03992 39.0461 1.07961Z">
+                                                        </path>
+                                                        <path
+                                                            d="M26.6303 9.33834C24.4077 9.33834 22.5994 11.1466 22.5994 13.3693C22.5994 15.592 24.4077 17.4003 26.6303 17.4003C28.8531 17.4003 30.6614 15.592 30.6614 13.3693C30.6614 11.1467 28.8531 9.33834 26.6303 9.33834ZM26.6303 16.4483C24.9326 16.4483 23.5513 15.0671 23.5513 13.3692C23.5513 11.6714 24.9326 10.2902 26.6303 10.2902C28.3282 10.2902 29.7094 11.6714 29.7094 13.3692C29.7094 15.0671 28.3282 16.4483 26.6303 16.4483ZM9.04722 30.9524C8.95796 30.8631 8.8369 30.813 8.71067 30.813C8.58443 30.813 8.46337 30.8631 8.37411 30.9524L2.76839 36.558C2.70174 36.6245 2.65634 36.7094 2.63794 36.8017C2.61953 36.8941 2.62894 36.9898 2.66499 37.0768C2.70103 37.1638 2.76208 37.2382 2.84041 37.2904C2.91874 37.3427 3.01082 37.3706 3.10499 37.3705C3.16752 37.3706 3.22944 37.3583 3.28721 37.3344C3.34497 37.3104 3.39744 37.2753 3.44159 37.231L9.04732 31.6254C9.0915 31.5812 9.12655 31.5287 9.15046 31.471C9.17437 31.4133 9.18667 31.3514 9.18666 31.2889C9.18666 31.2264 9.17434 31.1645 9.15041 31.1068C9.12648 31.049 9.09142 30.9966 9.04722 30.9524ZM11.1981 33.1033C11.1088 33.014 10.9878 32.9639 10.8616 32.9639C10.7353 32.9639 10.6143 33.014 10.525 33.1033L6.86454 36.7637C6.7979 36.8303 6.7525 36.9151 6.73409 37.0074C6.71568 37.0998 6.7251 37.1955 6.76114 37.2825C6.79719 37.3695 6.85824 37.4439 6.93656 37.4962C7.01489 37.5484 7.10697 37.5763 7.20114 37.5762C7.32299 37.5762 7.44474 37.5297 7.53774 37.4367L11.1982 33.7763C11.2874 33.687 11.3375 33.566 11.3375 33.4398C11.3375 33.3136 11.2873 33.1925 11.1981 33.1033ZM15.1455 33.4579C15.0562 33.3686 14.9352 33.3185 14.8089 33.3185C14.6827 33.3185 14.5616 33.3686 14.4724 33.4579L10.6361 37.2941C10.5694 37.3607 10.524 37.4455 10.5056 37.5378C10.4872 37.6302 10.4966 37.7259 10.5327 37.8129C10.5687 37.8999 10.6298 37.9743 10.7081 38.0266C10.7864 38.0788 10.8785 38.1067 10.9727 38.1066C11.0945 38.1066 11.2163 38.0602 11.3093 37.9672L15.1456 34.1309C15.1898 34.0867 15.2248 34.0342 15.2487 33.9765C15.2726 33.9187 15.2849 33.8568 15.2849 33.7944C15.2849 33.7319 15.2726 33.67 15.2487 33.6122C15.2247 33.5545 15.1897 33.5021 15.1455 33.4579ZM6.54184 25.5271C6.58695 25.4832 6.62288 25.4306 6.64754 25.3727C6.6722 25.3147 6.68511 25.2524 6.6855 25.1894C6.6859 25.1263 6.67378 25.0639 6.64984 25.0056C6.62591 24.9473 6.59064 24.8943 6.54608 24.8498C6.50152 24.8052 6.44856 24.77 6.39026 24.7461C6.33197 24.7221 6.26951 24.71 6.2065 24.7104C6.14349 24.7108 6.08118 24.7237 6.0232 24.7484C5.96522 24.7731 5.91271 24.809 5.86873 24.8541L2.03245 28.6904C1.96581 28.7569 1.92041 28.8418 1.902 28.9341C1.88359 29.0265 1.89301 29.1222 1.92905 29.2092C1.96509 29.2962 2.02615 29.3706 2.10447 29.4228C2.1828 29.4751 2.27488 29.503 2.36905 29.5029C2.4909 29.5029 2.61265 29.4564 2.70565 29.3634L6.54184 25.5271ZM3.23588 33.1349L6.89614 29.4744C6.94126 29.4304 6.97719 29.3779 7.00185 29.3199C7.02651 29.2619 7.03942 29.1996 7.03981 29.1366C7.04021 29.0736 7.02808 29.0112 7.00415 28.9529C6.98022 28.8946 6.94495 28.8416 6.90039 28.7971C6.85583 28.7525 6.80287 28.7172 6.74457 28.6933C6.68628 28.6694 6.62382 28.6573 6.5608 28.6577C6.49779 28.6581 6.43549 28.671 6.37751 28.6957C6.31953 28.7203 6.26702 28.7563 6.22303 28.8014L2.56277 32.4619C2.49613 32.5284 2.45073 32.6132 2.43232 32.7056C2.41391 32.7979 2.42333 32.8937 2.45937 32.9807C2.49542 33.0677 2.55647 33.142 2.63479 33.1943C2.71312 33.2466 2.8052 33.2744 2.89937 33.2743C2.96189 33.2744 3.0238 33.2621 3.08155 33.2382C3.13931 33.2143 3.19175 33.1792 3.23588 33.1349Z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                        <h5 class="text-black text-xl font-semibold py-2">Deploy</h5>
+                                        <ul>
+                                            <li
+                                                class="relative pl-4 text-gray-500 text-sm font-normal py-1 before:content-[''] before:w-2 before:h-2 before:rounded-full  before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:bg-orange-500">
+                                                Brand Rollout
+                                            </li>
+                                            <li
+                                                class="relative pl-4 text-gray-500 text-sm font-normal py-1 before:content-[''] before:w-2 before:h-2 before:rounded-full  before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:bg-orange-500">
+                                                Website Launch
+                                            </li>
+                                            <li
+                                                class="relative pl-4 text-gray-500 text-sm font-normal py-1 before:content-[''] before:w-2 before:h-2 before:rounded-full  before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:bg-orange-500">
+                                                Ad Campain
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- resutl info -->
+                            <div class="py-5 md:py-10">
+                                <h3 class="text-3xl font-bold text-black">Project Overview</h3>
+                                <p class="text-md leading-[-2px] py-10 text-gray-500 font-normal">
+                                    urna Aenean onewaryzo eleifend vitae tellus a facilisis. Nunc posuere at augue eget
+                                    portat Intelg odion tellus,
+                                    dignissim fermentumara purus nec, consequat dapibus metus.Vivamus onem urna worlda
+                                    maurs faucibus at egestas quis,
+                                    fermentum egetonav neque.</p>
+                                <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+                                    <div class="col-span-3  rounded-tl-[70px] overflow-hidden rounded-br-[70px]">
+                                        <img src="../src/images/portfolio-details-img5.jpg"
+                                            class="w-full h-full object-cover" alt="">
+                                    </div>
+                                    <div class="col-span-2 rounded-tr-[70px] overflow-hidden rounded-bl-[70px]">
+                                        <img src="../src/images/portfolio-details-img6.jpg"
+                                            class="w-full h-full object-cover" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="py-5 md:py-10">
+                                <div class="flex justify-between items-center pb-5 border-b">
+                                    <a href="#"
+                                        class="py-1 px-3 text-sm font-medium text-orange-500 bg-orange-300 rounded-md hover:text-white hover:bg-orange-500 hover:duration-300">Product
+                                        Design</a>
+                                    <ul class="flex gap-7">
+                                        <li><a href="#"
+                                                class="text-gray-700 font-semibold text-md hover:text-orange-500 hover:duration-300">
+                                                <i class="fa-brands fa-facebook-f"></i>
+                                            </a></li>
+                                        <li><a href="#"
+                                                class="text-gray-700 font-semibold text-md hover:text-orange-500 hover:duration-300">
+                                                <i class="fa-brands fa-x-twitter"></i>
+                                            </a></li>
+                                        <li><a href="#"
+                                                class="text-gray-700 font-semibold text-md hover:text-orange-500 hover:duration-300">
+                                                <i class="fa-brands fa-pinterest-p"></i>
+                                            </a></li>
+                                        <li><a href="#"
+                                                class="text-gray-700 font-semibold text-md hover:text-orange-500 hover:duration-300">
+                                                <i class="fa-brands fa-linkedin-in"></i>
+                                            </a></li>
+                                    </ul>
+                                </div>
+                                <div class="py-5 border-b">
+                                    <a href="#"
+                                        class="text-md inline-flex items-center gap-3 text-black font-normal uppercase hover:text-orange-500 duration-150">
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                        Previous Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- DYNAMIC SECTION -->
+            </section>
+            <!-- COMMON SECTION -->
+            <!-- Footer Navigation desktop -->
+            <footer class="hidden xl:flex 2xl:flex justify-between items-center">
+                <nav class="flex-1 flex" id="desktop__Nav--Menu">
+                    <a href="../index.html"
+                        class="group text-gray-600 border-t text-center border-black flex-1 px-3 py-4 font-medium desktop__nav--link">Home
+                        <span><i
+                                class="fa-solid fa-arrow-right text-md rotate-[-45deg] text-black group-hover:text-orange-500"></i></span></a>
+                    <a href="about.html"
+                        class="group text-gray-600 border border-r-0 border-b-0 text-center border-black flex-1 px-3 py-4 font-medium desktop__nav--link">About
+                        <span><i
+                                class="fa-solid fa-arrow-right text-md rotate-[-45deg] text-black group-hover:text-orange-500"></i></span></a>
+                    <a href="services.html"
+                        class="group text-gray-600 border border-r-0 border-b-0 text-center border-black flex-1 px-3 py-4 font-medium desktop__nav--link">Services
+                        <span><i
+                                class="fa-solid fa-arrow-right text-md rotate-[-45deg] text-black group-hover:text-orange-500"></i></span></a>
+                    <a href="portfolio.html"
+                        class="group text-gray-600 border border-r-0 border-b-0 text-center border-black flex-1 px-3 py-4 font-medium desktop__nav--link">Portfolio
+                        <span><i
+                                class="fa-solid fa-arrow-right text-md rotate-[-45deg] text-black group-hover:text-orange-500"></i></span></a>
+                    <a href="pricing.html"
+                        class="group text-gray-600 border border-r-0 border-b-0 text-center border-black flex-1 px-3 py-4 font-medium desktop__nav--link">Pricing
+                        <span><i
+                                class="fa-solid fa-arrow-right text-md rotate-[-45deg] text-black group-hover:text-orange-500"></i></span></a>
+                    <a href="contact.html"
+                        class="group text-gray-600 border border-r-0 border-b-0 text-center border-black flex-1 px-3 py-4 font-medium desktop__nav--link">Contact
+                        <span><i
+                                class="fa-solid fa-arrow-right text-md rotate-[-45deg] text-black group-hover:text-orange-500"></i></span></a>
+                    <div class="relative group flex-1 cursor-pointer">
+                        <a href="javascript:void(0)"
+                            class="group text-gray-600 border border-r-0 border-b-0 text-center group-hover:bg-black group-hover:text-white border-black px-3 py-4 font-medium desktop__nav--link flex items-center justify-center gap-2">
+                            Others
+                            <span>
+                                <i
+                                    class="fa-solid fa-arrow-right text-md rotate-[-45deg] text-black group-hover:text-orange-500"></i>
+                            </span>
+                        </a>
+
+                        <!-- Dropdown -->
+                        <div
+                            class="absolute z-20 rounded-md rounded-tr-none rounded-bl-none rounded-br-none bottom-full right-0 max-w-64 w-full bg-[#f9f7f1] border border-black border-b-0 border-t-0 overflow-hidden max-h-0 group-hover:border-t group-hover:max-h-[600px] px-4 py-0 transition-all duration-500 ease-in-out">
+                            <a href="blog.html"
+                                class="block px-4 py-3 font-medium text-gray-600 hover:text-orange-500 border-b border-black">Blog
+                                <span><i
+                                        class="fa-solid fa-arrow-right text-md rotate-[-45deg] text-black group-hover:text-orange-500"></i></span>
+                            </a>
+                            <a href="faq.html"
+                                class="block px-4 py-3 font-medium text-gray-600 hover:text-orange-500 border-b border-black">Faq
+                                <span><i
+                                        class="fa-solid fa-arrow-right text-md rotate-[-45deg] text-black group-hover:text-orange-500"></i></span>
+                            </a>
+                            <a href="error.html"
+                                class="block px-4 py-3 font-medium text-gray-600 hover:text-orange-500">Error
+                                <span><i
+                                        class="fa-solid fa-arrow-right text-md rotate-[-45deg] text-black group-hover:text-orange-500"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </footer>
+            <!-- Footer Navigation mobile -->
+            <footer
+                class="text-center z-10 bg-[#f9f7f1] border-t border-black w-full fixed bottom-0 left-0 right-0 xl:hidden 2xl:hidden">
+                <div class="flex justify-between items-center py-4 px-6">
+                    <div class="py-2">
+                        <a href="../index.html" class="w-20 h-20 object-contain">
+                            <img src="../src/images/logo.svg" alt="Logo" class="w-full h-full object-cover" />
+                        </a>
+                    </div>
+                    <div class="flex items-center gap-3 space-x-5">
+                        <a href="javascript:void(0)" class="text-black hover:text-orange-500 pa-2"><i
+                                class="fa-solid fa-moon text-3xl"></i></a>
+                        <a id="open__Menu--Btn" href="javascript:void(0)"
+                            class="text-black hover:text-orange-500 pa-2"><i
+                                class="fa-solid fa-house-chimney-window text-3xl"></i></a>
+                    </div>
+                </div>
+            </footer>
+            <!-- COMMON SECTION -->
+        </main>
+    </div>
+
+    <script src="../src/js/script.js"></script>
+</body>
+
+</html>

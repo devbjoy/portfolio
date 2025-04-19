@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio -- Contact</title>
+
+    <!-- Tailwind CSS CDN -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <link rel="stylesheet" href="../src/css/output.css" />
+</head>
+
+<body class="bg-[#f9f7f1] text-gray-800">
+    <!-- COMMON SECTION -->
+
+    <!-- mobile menu -->
+    <div class="max-w-full h-[100vh] bg-[#f9f7f1] fixed inset-0 z-40 overflow-auto transform -translate-y-full opacity-0 transition-all duration-500"
+        id="mobile__menu--section">
+        <!-- top area -->
+        <div class="flex justify-between py-3 px-4 border-b border-gray-300">
+            <div class="py-2">
+                <a href="../index.html" class="w-20 h-20 object-contain">
+                    <img src="../src/images/logo.svg" alt="Logo" class="w-full h-full object-cover" />
+                </a>
+            </div>
+            <div>
+
+                <a id="close__Menu--Btn" href="javascript:void(0)"
+                    class="text-shadow-black group duration-150 border w-10 h-10 rounded-full flex justify-center items-center border-black hover:bg-orange-500 hover:text-white hover:border-orange-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 18 18"
+                        class="group-hover:fill-white duration-150">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M18 0L11.1686 8.99601L18 18L9.0041 11.1605L0 18L6.83156 8.99601L0 0L9.0041 6.83156L18 0Z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <!-- mobile menu list  -->
+        <div class="mt-8 px-5 lg:px-10">
+            <div class="container flex lg:flex-row flex-col justify-between">
+                <div class="basis-[60%]">
+                    <ul>
+                        <li class="px-4 py-3 border border-gray-300 border-b-0">
+                            <a href="../index.html"
+                                class="uppercase text-2xl md:text-3xl lg:text-3xl font-bold text-shadow-black">Home</a>
+                        </li>
+                        <li class="px-4 py-3 border border-gray-300 border-b-0">
+                            <a href="about.html"
+                                class="uppercase text-2xl md:text-3xl lg:text-3xl font-bold text-shadow-black ">About</a>
+                        </li>
+                        <li class="px-4 py-3 border border-gray-300 border-b-0">
+                            <a href="services.html"
+                                class="uppercase text-2xl md:text-3xl lg:text-3xl font-bold text-shadow-black">Services</a>
+                        </li>
+                        <li class="px-4 py-3 border border-gray-300 border-b-0">
+                            <a href="portfolio.html"
+                                class="uppercase text-2xl md:text-3xl lg:text-3xl font-bold text-shadow-black">Protfolio</a>
+                        </li>
+                        <li class="px-4 py-3 border border-gray-300 border-b-0">
+                            <a href="pricing.html"
+                                class="uppercase text-2xl md:text-3xl lg:text-3xl font-bold text-shadow-black">Pricing</a>
+                        </li>
+                        <li class="px-4 py-3 border border-gray-300 border-b-0">
+                            <a href="contact.html"
+                                class="uppercase text-2xl md:text-3xl lg:text-3xl font-bold text-shadow-black mobile__menu--active">Contact</a>
+                        </li>
+
+                        <li class="relative px-4 py-3 border border-gray-300">
+                            <!-- Main Button -->
+                            <button onclick="toggleDropdown()"
+                                class="uppercase text-2xl md:text-3xl lg:text-3xl font-bold text-shadow-black flex items-center justify-between w-full">
+                                Others
+                                <i id="dropdownIcon"
+                                    class="fa-solid fa-chevron-right ml-2 transition-transform duration-300"></i>
+                                <!-- Small arrow icon -->
+                            </button>
+
+                            <!-- Dropdown Menu -->
+                            <div id="dropdownMenu"
+                                class="absolute px-5 z-10 top-full left-0 w-full max-w-64 bg-[#f9f7f1] border border-gray-300 overflow-hidden max-h-0 transition-all duration-500 ease-in-out origin-top">
+                                <a href="blog.html"
+                                    class="block px-4 py-3 text-gray-500 uppercase text-2xl font-bold hover:text-black group">
+                                    Blog
+                                    <span>
+                                        <i
+                                            class="fa-solid fa-arrow-right text-sm rotate-[-45deg] group-hover:text-orange-500"></i>
+                                    </span>
+                                </a>
+                                <a href="faq.html"
+                                    class="block px-4 py-3 text-gray-500 uppercase text-2xl font-bold hover:text-black group">
+                                    Faq
+                                    <span>
+                                        <i
+                                            class="fa-solid fa-arrow-right text-sm rotate-[-45deg] group-hover:text-orange-500"></i>
+                                    </span>
+                                </a>
+                                <a href="error.html"
+                                    class="block px-4 py-3 text-gray-500 uppercase text-2xl font-bold hover:text-black group">
+                                    Error
+                                    <span>
+                                        <i
+                                            class="fa-solid fa-arrow-right text-sm rotate-[-45deg] group-hover:text-orange-500"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="p-2 basis-[40%]">
+                    <h3 class="font-bold text-3xl mb-6 text-shadow-black">
+                        Get in Touch
+                        <span><i class="fa-solid fa-arrow-right text-[15px] rotate-[-45deg]"></i></span>
+                    </h3>
+                    <div class="flex flex-col lg:px-3">
+                        <div class="flex items-center mb-5">
+                            <div
+                                class="w-12 h-12 rounded-full border border-black flex justify-center items-center hover:bg-black hover:text-white duration-200">
+                                <i class="fa-solid fa-phone-volume text-xl"></i>
+                            </div>
+                            <div class="flex flex-col ml-3">
+                                <span class="text-md md:text-xl lg:text-sm font-medium text-gray-600">Phone</span>
+                                <a href="#"
+                                    class="font-medium text-md md:text-2xl lg:text-[18px] text-black hover:text-orange-500 duration-200">+938383474747</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-5">
+                            <div
+                                class="w-12 h-12 rounded-full border border-black flex justify-center items-center hover:bg-black hover:text-white duration-200">
+                                <i class="fa-solid fa-envelope text-xl"></i>
+                            </div>
+                            <div class="flex flex-col ml-3">
+                                <span class="text-sm md:text-xl lg:text-sm font-medium text-gray-600">Email</span>
+                                <a href="#"
+                                    class="font-medium text-md md:text-2xl lg:text-[18px] text-black hover:text-orange-500 duration-200">info@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-5">
+                            <div
+                                class="w-12 h-12 rounded-full border border-black flex justify-center items-center hover:bg-black hover:text-white duration-200">
+                                <i class="fa-solid fa-location-dot text-xl"></i>
+                            </div>
+                            <div class="ml-3">
+                                <a href="#"
+                                    class="font-medium text-md md:text-2xl lg:text-[18px] text-black hover:text-orange-500 duration-200">Canada
+                                    City, Office-02, Road-11,House-3B/B, Section-H</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- social link section -->
+        <div class="mt-3 px-5 md:px-10 lg:px-10">
+            <h4 class="text-black font-normal text-xl mb-2">
+                Social Link
+                <span><i class="fa-solid fa-arrow-right text-[15px] rotate-[-45deg]"></i></span>
+            </h4>
+            <div class="py-7 border-t border-gray-300">
+                <div class="flex gap-2 flex-wrap">
+                    <a href="#"
+                        class="py-1 px-4 border border-gray-300 rounded-3xl text-md hover:bg-orange-500 hover:text-white hover:border-orange-500 duration-100">
+                        <i class="fa-brands fa-x-twitter text-sm"></i>
+                        Twitter
+                    </a>
+                    <a href="#"
+                        class="py-1 border px-4 border-gray-300 rounded-3xl text-md hover:bg-orange-500 hover:text-white hover:border-orange-500 duration-100">
+                        <i class="fa-brands fa-instagram text-sm"></i>
+                        Instagram
+                    </a>
+                    <a href="#"
+                        class="py-1 px-4 border border-gray-300 rounded-3xl text-md hover:bg-orange-500 hover:text-white hover:border-orange-500 duration-100">
+                        <i class="fa-brands fa-behance text-sm"></i>
+                        Behance
+                    </a>
+                    <a href="#"
+                        class="py-1 px-4 border border-gray-300 rounded-3xl text-md hover:bg-orange-500 hover:text-white hover:border-orange-500 duration-100">
+                        <i class="fa-solid fa-basketball text-sm"></i>
+                        Dribbble
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- COMMON SECTION -->
+
+    <!-- Layout Wrapper -->
+    <div class="flex min-h-screen">
+        <!-- Sidebar -->
+        <!-- COMMON SECTION -->
+        <aside
+            class="hidden xl:flex 2xl:flex flex-col justify-between items-center w-20 bg-[#f9f7f1] border-r border-r-black">
+            <div class="pt-5">
+                <a href="../index.html" class="w-20 h-20 object-contain">
+                    <img src="../src/images/logo.svg" alt="Logo" class="w-full h-full object-cover" />
+                </a>
+            </div>
+            <div>
+                <a href="#" class=""><i class="fa-solid fa-moon text-3xl hover:text-orange-600"></i></a>
+            </div>
+            <div class="pb-6 flex flex-col gap-3 align-center w-full">
+                <!-- Top Icon (X) -->
+                <a href="#" class="flex flex-col items-center group">
+                    <i class="fab fa-x-twitter text-2xl text-gray-500 group-hover:text-orange-500"></i>
+                    <div class="w-[100%] h-px bg-gray-300 mt-8"></div>
+                </a>
+
+                <!-- Instagram -->
+                <a href="#" class="flex flex-col items-center group">
+                    <i class="fab fa-instagram text-2xl text-gray-500 group-hover:text-orange-500"></i>
+                    <div class="w-full h-px bg-gray-300 mt-8"></div>
+                </a>
+
+                <!-- Behance -->
+                <a href="#" class="flex flex-col items-center group">
+                    <i class="fab fa-behance text-2xl text-gray-500 group-hover:text-orange-500"></i>
+                    <div class="w-full h-px bg-gray-300 mt-8"></div>
+                </a>
+
+                <!-- Dribbble -->
+                <a href="#" class="flex flex-col items-center group">
+                    <i class="fab fa-dribbble text-2xl text-gray-500 group-hover:text-orange-500"></i>
+                    <!-- Last one: No Divider -->
+                </a>
+            </div>
+        </aside>
+        <!-- COMMON SECTION -->
+
+        <!-- Main Content -->
+        <main class="flex-1 flex flex-col justify-between">
+            <!-- Top Section -->
+            <section class="flex-1">
+                <!-- DYNAMIC SECTION -->
+                <div
+                    class="mb-20 md:mb-15 lg:mb-0 px-2 md:px-5 lg:px-0 flex flex-col lg:flex-row w-full h-auto max-h-[93vh] overflow-y-auto">
+                    <div class="lg:basis-[40%] px-3 py-10 md:p-10 lg:p-10 xl:p-20 2xl:p-20 w-full h-full bg-[#FBDACF]">
+                        <!-- contact info -->
+                        <div>
+                            <span class="text-lg inline-flex gap-2 text-orange-500 font-medium">
+                                <svg class="fill-orange-500" width="23" height="23" viewBox="0 0 23 23"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.4366 12.5229C18.551 12.8753 18.4609 13.2025 18.1663 13.5045C18.5704 13.4531 18.7963 13.2433 19.0119 12.8341C19.1212 13.5959 18.5784 13.8901 18.2113 14.0186L18.0368 14.0753L17.7109 13.3066C18.0448 13.0966 18.2965 12.8607 18.4221 12.5591L18.4366 12.5229Z">
+                                    </path>
+                                    <path
+                                        d="M15.3604 12.544C16.8324 12.284 18.2366 13.2665 18.4965 14.7385L18.533 14.9448C18.0493 13.7191 16.7352 12.9632 15.3621 13.2057L15.2489 13.2258C14.249 13.4025 13.4687 14.086 13.1357 14.9576C13.2457 13.7735 14.1329 12.761 15.3604 12.544Z">
+                                    </path>
+                                    <path
+                                        d="M4.6523 12.5229C4.53787 12.8753 4.62795 13.2025 4.92255 13.5045C4.51847 13.4531 4.29253 13.2433 4.07696 12.8341C3.96771 13.5959 4.51047 13.8901 4.87757 14.0186L5.0521 14.0753L5.37793 13.3066C5.04409 13.0966 4.79233 12.8607 4.66673 12.5591L4.6523 12.5229Z">
+                                    </path>
+                                    <path
+                                        d="M7.72429 12.544C6.25229 12.284 4.84816 13.2665 4.58817 14.7385L4.55176 14.9448C5.03543 13.7191 6.34948 12.9632 7.7226 13.2057L7.8358 13.2258C8.83573 13.4025 9.61604 14.086 9.94898 14.9576C9.83905 13.7735 8.95186 12.761 7.72429 12.544Z">
+                                    </path>
+                                    <path
+                                        d="M7.77882 13.5327C8.40151 13.5327 8.90627 14.0375 8.90627 14.6602V14.8857C8.90627 15.5083 8.40151 16.0131 7.77882 16.0131C7.15613 16.0131 6.65137 15.5083 6.65137 14.8857V14.7345C6.7963 14.7858 6.95438 14.7861 7.09957 14.7356C7.24475 14.685 7.36837 14.5865 7.45007 14.4562C7.53177 14.326 7.56667 14.1718 7.54902 14.0191C7.53138 13.8664 7.46223 13.7242 7.35298 13.616C7.48817 13.5609 7.63281 13.5326 7.77882 13.5327ZM15.1073 13.5327C15.7299 13.5327 16.2347 14.0375 16.2347 14.6602V14.8857C16.2347 15.5083 15.7299 16.0131 15.1073 16.0131C14.4846 16.0131 13.9798 15.5083 13.9798 14.8857V14.7345C14.1247 14.7858 14.2828 14.7861 14.428 14.7356C14.5732 14.685 14.6968 14.5865 14.7785 14.4562C14.8602 14.326 14.8951 14.1718 14.8775 14.0191C14.8598 13.8664 14.7907 13.7242 14.6814 13.616C14.8166 13.5609 14.9612 13.5326 15.1073 13.5327Z">
+                                    </path>
+                                    <path
+                                        d="M14.4912 18.287C14.4537 18.6234 13.7972 20.8609 11.4999 20.8609C9.20259 20.8609 8.54596 18.6234 8.50853 18.287C8.45576 17.8134 8.86401 17.6678 9.31398 17.837C9.84444 18.0366 10.7765 18.2605 11.4999 18.2605C12.2233 18.2605 13.1553 18.0366 13.6858 17.837C14.1356 17.6678 14.544 17.8133 14.4912 18.287ZM13.0783 18.7188C12.0282 18.7188 11.0954 19.3224 10.6489 20.2311L10.6313 20.2676L10.6643 20.2792C10.9003 20.3592 11.1578 20.4038 11.4392 20.4094L11.4999 20.41C12.2469 20.41 12.8286 20.1423 13.2811 19.6663C13.5075 19.4283 13.6909 19.1479 13.8264 18.8624L13.8423 18.828L13.824 18.8227C13.602 18.7594 13.3729 18.7247 13.1421 18.7196L13.0783 18.7188ZM19.2089 12.3685C20.3617 12.676 21.4929 13.0589 22.5954 13.5149C22.0981 16.2757 20.5957 18.6872 18.4807 20.3571C19.5556 17.0172 19.8005 14.3613 19.2153 12.3888L19.2089 12.3685ZM3.7906 12.3685C3.19756 14.343 3.44052 17.0057 4.51916 20.3567C2.40406 18.6872 0.901615 16.2757 0.404297 13.5149C1.46669 13.0753 2.55547 12.7041 3.67075 12.4009L3.7906 12.3685Z">
+                                    </path>
+                                    <path
+                                        d="M11.4992 11.1607C15.4495 11.1607 19.1318 11.8559 22.5446 13.2465L22.6811 13.3024L22.5086 13.7191C19.1132 12.3143 15.4439 11.6117 11.4991 11.6117C7.60681 11.6117 3.98295 12.2957 0.625853 13.6633L0.489883 13.7191L0.317383 13.3024C3.76829 11.8745 7.49609 11.1607 11.4992 11.1607ZM22.5127 9.06184L22.6506 9.11821L22.4787 9.53526C21.694 9.21174 20.8945 8.92554 20.0828 8.67761L20.25 8.25707C21.0157 8.49207 21.7707 8.76059 22.5128 9.06184H22.5127ZM11.4992 6.98914C12.6729 6.98914 13.8229 7.05047 14.9492 7.17325V7.62693C13.8236 7.50235 12.6736 7.44012 11.4992 7.44012C7.61909 7.44012 4.00561 8.11986 0.657309 9.479L0.51976 9.53526L0.347937 9.11833C3.79016 7.69875 7.50804 6.98914 11.4992 6.98914Z">
+                                    </path>
+                                    <path
+                                        d="M17.1323 5.50887C17.1323 4.4697 17.7773 4.47196 18.1643 5.29218C18.4848 4.40149 19.1358 4.7386 18.7431 5.50887C19.2692 4.82868 19.8807 5.09059 19.5049 5.91701C20.6634 4.87412 20.7384 5.97259 20.0564 6.62246C20.0564 6.62246 20.2558 6.54658 20.4736 6.49776L20.5123 6.48942C20.9255 6.40395 21.3671 6.43552 20.6323 7.26961C21.3771 7.10162 22.1619 7.70988 20.5575 8.16921C21.8118 8.53518 20.7078 9.16779 20.4439 9.08966C20.9733 9.7845 20.6244 10.2029 19.9242 9.84877C20.7314 10.7034 20.7303 11.7027 19.3415 10.4469C19.4529 10.9952 19.0021 11.7468 18.5533 10.7312C18.5184 11.4947 18.1726 12.0481 17.944 10.8672C17.342 12.0482 16.9804 11.4085 16.8107 10.7312C16.331 11.5483 15.9064 11.1909 16.3292 10.4469C15.7763 10.9854 15.0268 10.6701 15.5369 9.84877C15.2263 10.0964 14.7625 10.1924 15.2102 9.48066C14.5443 9.83219 13.778 9.49306 14.7597 8.7707C13.778 8.91479 14.0354 8.16921 14.7597 8.16921C13.7333 8.16921 12.8229 7.1784 14.9036 7.42283C14.2891 7.24548 14.4044 6.32086 15.373 6.62246C14.7597 5.9771 15.4006 5.24584 16.0898 6.17632C15.8465 4.48932 16.5525 4.60375 17.1323 5.50887ZM17.9209 6.46146C17.9158 6.45046 17.9106 6.43949 17.9054 6.42853L17.8896 6.39606L17.8736 6.36416C17.652 5.92513 17.3943 5.64315 17.27 6.53474C16.9909 5.62534 16.6356 5.85466 16.7807 6.86136C16.3696 6.30609 15.9955 6.55188 16.0591 6.97298C15.3456 6.78244 15.3188 7.42362 15.9023 7.57639C15.4613 7.78655 15.2568 8.46798 15.8426 8.38196C15.2568 8.81298 15.5673 9.15911 16.0591 8.88423C15.2149 9.83592 16.1612 9.67334 16.5436 9.44616C16.2913 9.89015 16.9838 10.0778 17.27 9.59013C17.1665 10.5371 17.8777 10.632 17.9209 9.68664C18.1888 10.2928 18.8954 10.1956 18.744 9.44616C19.5726 10.1956 19.9391 9.50884 19.036 9.04591C19.7666 9.21458 19.6343 8.94726 19.3899 8.6194L19.3692 8.59189C19.3552 8.57334 19.3411 8.55485 19.3269 8.53642L19.2944 8.49436C19.2654 8.45693 19.2363 8.41927 19.2079 8.38196C19.2577 8.38196 19.313 8.37914 19.368 8.37327L19.3955 8.37012C19.6783 8.33449 19.9277 8.21633 19.3564 7.98385C19.3704 7.98047 19.3844 7.97709 19.3984 7.97348L19.4404 7.96311L19.4823 7.95251C19.5032 7.94721 19.524 7.94191 19.5446 7.9365L19.5857 7.92568C20.1912 7.76445 20.6259 7.57639 19.2849 7.57639C20.4136 6.86136 19.1241 7.21189 19.1241 7.21189C19.5012 6.85268 19.1241 6.60081 18.7439 6.86125C19.5327 5.7577 18.8212 6.16956 18.4875 6.60081C18.7219 6.14126 18.4875 5.42646 17.9209 6.46146ZM17.6375 6.94637C17.772 7.15427 18.0584 7.31753 18.2244 7.12462C18.2244 7.35158 18.4382 7.40457 18.576 7.40457C18.576 7.61258 18.3804 7.75092 18.8483 7.86739C18.7047 7.97506 18.576 8.29052 18.7047 8.3399C18.576 8.47553 18.4229 8.56979 18.5171 8.79246C18.3401 8.72617 18.0408 8.83508 18.003 8.99811C17.9044 8.83508 17.7604 8.83869 17.6375 8.98559C17.5311 8.83869 17.2967 8.73462 17.0804 8.79246C17.0978 8.59268 16.907 8.51206 16.7247 8.56979C16.736 8.51206 16.7371 8.17845 16.5691 8.14192C16.7247 8.02715 16.9069 7.83458 16.7903 7.55971C16.935 7.59127 17.1541 7.45801 17.0978 7.25101C17.2849 7.35902 17.5837 7.15427 17.6375 6.94637Z">
+                                    </path>
+                                    <path
+                                        d="M11.5 0C17.8513 0 23 5.14873 23 11.5C23 17.8513 17.8513 23 11.5 23C5.14873 23 0 17.8513 0 11.5C0 5.14873 5.14873 0 11.5 0ZM11.5 0.45098C5.39778 0.45098 0.45098 5.39778 0.45098 11.5C0.45098 17.6022 5.39778 22.549 11.5 22.549C17.6022 22.549 22.549 17.6022 22.549 11.5C22.549 5.39778 17.6022 0.45098 11.5 0.45098Z">
+                                    </path>
+                                </svg>
+                                Talk About Ideas
+                            </span>
+                            <h3
+                                class="text-3xl md:text-5xl lg:text-3xl xl:text-5xl 2xl:text-5xl font-bold text-black text-shadow-black">
+                                Contact Me
+                            </h3>
+                            <p
+                                class="text-md py-10 md:text-md lg:text-lg xl:text-lg 2xl:text-lg text-gray-500 text-justify leading-20">
+                                UI/UX services encompass a range of offerings aimed at
+                                enhancing user experiences and interfaces across digital
+                                products. Here are some key services typically provided by
+                                UI/UX designers
+                            </p>
+                        </div>
+                        <div class="pt-0">
+                            <ul>
+                                <li class="py-5 border-b border-gray-600">
+                                    <h5 class="text-md text-gray-800 font-normal mb-4">To Know More</h5>
+                                    <div class="flex items-center">
+                                        <div
+                                            class="w-10 h-10 shadow-md rounded-full border border-black flex justify-center items-center">
+                                            <i class="fa-solid fa-phone-volume text-md"></i>
+                                        </div>
+                                        <div class="ml-3 flex flex-col">
+                                            <span class="text-sm text-gray-600 font-normal">Phone</span>
+                                            <a href="#"
+                                                class="text-sm md:text-lg lg:text-lg xl:text-lg 2xl:text-lg  text-gray-700 font-medium hover:text-orange-500 duration-300">+01610008240</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="py-5 border-b border-gray-600">
+                                    <h5 class="text-md text-gray-800 font-normal mb-4">Update Info</h5>
+                                    <div class="flex items-center">
+                                        <div
+                                            class="w-10 h-10 shadow-md rounded-full border border-black flex justify-center items-center">
+                                            <i class="fa-solid fa-at text-md"></i>
+                                        </div>
+                                        <div class="ml-3 flex flex-col">
+                                            <span class="text-sm text-gray-600 font-normal">Email Now</span>
+                                            <a href="#"
+                                                class="text-sm md:text-lg lg:text-lg xl:text-lg 2xl:text-lg  text-gray-700 font-medium hover:text-orange-500 duration-300">bijoyshaha38@gmail.com</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="py-5 border-b border-gray-600">
+                                    <h5 class="text-md text-gray-800 font-normal mb-4">Local Coordinator</h5>
+                                    <div class="flex items-center">
+                                        <div
+                                            class="w-10 h-10 shadow-md rounded-full border border-black flex justify-center items-center">
+                                            <i class="fa-solid fa-location-dot text-md"></i>
+                                        </div>
+                                        <div class="ml-3 flex flex-col">
+                                            <span class="text-sm text-gray-600 font-normal">Location</span>
+                                            <a target="_blank"
+                                                href="https://www.google.ca/maps/place/Bisshonathpur/@23.6804213,88.6117208,16z/data=!3m1!4b1!4m6!3m5!1s0x39f939eb776d3f93:0x3735480361b81145!8m2!3d23.6805245!4d88.6162937!16s%2Fg%2F1q67mlh1q?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoJLDEwMjExNjQwSAFQAw%3D%3D"
+                                                class="text-sm md:text-lg lg:text-lg xl:text-lg 2xl:text-lg  text-gray-700 font-medium hover:text-orange-500 duration-300">Road-03,House-123/124,Mujibnagor</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="py-5 ">
+                                    <h5 class="text-md text-gray-800 font-normal mb-4">Professional</h5>
+                                    <div class="flex items-center">
+                                        <div
+                                            class="w-10 h-10 shadow-md rounded-full border border-black flex justify-center items-center">
+                                            <i class="fa-solid fa-street-view text-md"></i>
+                                        </div>
+                                        <div class="ml-3 flex flex-col">
+                                            <span class="text-sm text-gray-600 font-normal">Freelance</span>
+                                            <a href="#"
+                                                class="text-sm md:text-lg lg:text-lg xl:text-lg 2xl:text-lg  text-gray-700 font-medium hover:text-orange-500 duration-300">Available
+                                                Right Now</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="lg:basis-[60%] py-5 px-2 md:px-0 lg:px-5 xl:px-20 2xl:px-20 w-full h-full">
+                        <div class="py-5 pt-0 xl:pt-20 2xl:pt-20">
+                            <h3
+                                class="text-black text-3xl font-medium relative after:content-[''] after:block after:w-[200px] after:h-[2px] after:bg-black">
+                                Reatch Me Anytime
+                            </h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-3 mt-10">
+                                <div class="mb-4">
+                                    <label for="name" class="text-md text-gray-800 font-medium mb-3 block">Your Full
+                                        Name*</label>
+                                    <input type="text" id="name"
+                                        class="py-3 bg-[#f9f7f1]  outline-0 focus:border-orange-500 w-full px-6 border font-normal border-black border-b-4 border-r-4 rounded-md placeholder:text-sm placeholder:text-gray-400"
+                                        placeholder="Full Name...">
+                                </div>
+                                <div class="mb-5">
+                                    <label for="email" class="text-md text-gray-800 font-medium mb-3 block">Your Email
+                                        Address
+                                        *</label>
+                                    <input type="text" id="email"
+                                        class="py-3 bg-[#f9f7f1] outline-0 focus:border-orange-500 w-full px-6 border font-normal border-black border-b-4 border-r-4 rounded-md placeholder:text-sm placeholder:text-gray-400"
+                                        placeholder="Enter Your Email...">
+                                </div>
+                                <div class="mb-5 col-span-1 md:col-span-2">
+                                    <label for="subject" class="text-md text-gray-800 font-medium mb-3 block">Your
+                                        Subject
+                                        *</label>
+                                    <input type="text" id="subject"
+                                        class="py-3 bg-[#f9f7f1] outline-0 focus:border-orange-500 w-full px-6 border font-normal border-black border-b-4 border-r-4 rounded-md placeholder:text-sm placeholder:text-gray-400"
+                                        placeholder="Subject...">
+                                </div>
+                                <div class="mb-5 col-span-1 md:col-span-2">
+                                    <label for="message" class="text-md text-gray-800 font-medium mb-3 block">Your
+                                        Message
+                                        *</label>
+                                    <textarea rows="4" type="text" id="message"
+                                        class="py-3 bg-[#f9f7f1] outline-0 resize-none focus:border-orange-500 w-full px-6 border font-normal border-black border-b-4 border-r-4 rounded-md placeholder:text-sm placeholder:text-gray-400"
+                                        placeholder="Write a message..."></textarea>
+                                </div>
+                                <div class="col-span-1 md:col-span-2 mb-10">
+
+                                    <input type="checkbox" id="conditint"
+                                        class="w-4 h-4 border border-black rounded-sm" />
+
+                                    <label for="conditint" class="text-md ml-1 mb-1 text-gray-500 font-medium">Accept
+                                        the
+                                        Terms
+                                        and conditions</label>
+                                </div>
+                                <div class="col-span-1 md:col-span-2">
+                                    <button type="submit"
+                                        class="px-6 py-3 text-md border-orange-500 font-bold text-orange-500 border border-t-4 border-r-4 hover:border-black hover:text-black duration-300">Send
+                                        Message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- DYNAMIC SECTION -->
+            </section>
+            <!-- COMMON SECTION -->
+            <!-- Footer Navigation desktop -->
+            <footer class="hidden xl:flex 2xl:flex justify-between items-center">
+                <nav class="flex-1 flex" id="desktop__Nav--Menu">
+                    <a href="../index.html"
+                        class="group text-gray-600 border-t text-center border-black flex-1 px-3 py-4 font-medium desktop__nav--link">Home
+                        <span><i
+                                class="fa-solid fa-arrow-right text-md rotate-[-45deg] text-black group-hover:text-orange-500"></i></span></a>
+                    <a href="about.html"
+                        class="group text-gray-600 border border-r-0 border-b-0 text-center border-black flex-1 px-3 py-4 font-medium desktop__nav--link">About
+                        <span><i
+                                class="fa-solid fa-arrow-right text-md rotate-[-45deg] text-black group-hover:text-orange-500"></i></span></a>
+                    <a href="services.html"
+                        class="group text-gray-600 border border-r-0 border-b-0 text-center border-black flex-1 px-3 py-4 font-medium desktop__nav--link">Services
+                        <span><i
+                                class="fa-solid fa-arrow-right text-md rotate-[-45deg] text-black group-hover:text-orange-500"></i></span></a>
+                    <a href="portfolio.html"
+                        class="group text-gray-600 border border-r-0 border-b-0 text-center border-black flex-1 px-3 py-4 font-medium desktop__nav--link">Portfolio
+                        <span><i
+                                class="fa-solid fa-arrow-right text-md rotate-[-45deg] text-black group-hover:text-orange-500"></i></span></a>
+                    <a href="pricing.html"
+                        class="group text-gray-600 border border-r-0 border-b-0 text-center border-black flex-1 px-3 py-4 font-medium desktop__nav--link ">Pricing
+                        <span><i
+                                class="fa-solid fa-arrow-right text-md rotate-[-45deg] text-black group-hover:text-orange-500"></i></span></a>
+                    <a href="contact.html"
+                        class="group text-gray-600 border border-r-0 border-b-0 text-center border-black flex-1 px-3 py-4 font-medium desktop__nav--link desktop__nav--active">Contact
+                        <span><i
+                                class="fa-solid fa-arrow-right text-md rotate-[-45deg] text-black group-hover:text-orange-500"></i></span></a>
+                    <div class="relative group flex-1 cursor-pointer">
+                        <a
+                            class="group text-gray-600 border border-r-0 border-b-0 text-center group-hover:bg-black group-hover:text-white border-black px-3 py-4 font-medium desktop__nav--link flex items-center justify-center gap-2">
+                            Others
+                            <span>
+                                <i
+                                    class="fa-solid fa-arrow-right text-md rotate-[-45deg] text-black group-hover:text-orange-500"></i>
+                            </span>
+                        </a>
+
+                        <!-- Dropdown -->
+                        <div
+                            class="absolute z-20 rounded-md rounded-tr-none rounded-bl-none rounded-br-none bottom-full right-0 max-w-64 w-full bg-[#f5f3ef] border border-black border-b-0 border-t-0 overflow-hidden max-h-0 group-hover:border-t group-hover:max-h-[600px] px-4 py-0 transition-all duration-500 ease-in-out">
+                            <a href="blog.html"
+                                class="block px-4 py-3 font-medium text-gray-600 hover:text-orange-500 border-b border-black">Blog
+                                <span><i
+                                        class="fa-solid fa-arrow-right text-md rotate-[-45deg] text-black group-hover:text-orange-500"></i></span>
+                            </a>
+                            <a href="faq.html"
+                                class="block px-4 py-3 font-medium text-gray-600 hover:text-orange-500 border-b border-black">Faq
+                                <span><i
+                                        class="fa-solid fa-arrow-right text-md rotate-[-45deg] text-black group-hover:text-orange-500"></i></span>
+                            </a>
+                            <a href="error.html"
+                                class="block px-4 py-3 font-medium text-gray-600 hover:text-orange-500">Error
+                                <span><i
+                                        class="fa-solid fa-arrow-right text-md rotate-[-45deg] text-black group-hover:text-orange-500"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </footer>
+            <!-- Footer Navigation mobile -->
+            <footer
+                class="text-center z-10 bg-[#f5f3ef] border-t border-black w-full fixed bottom-0 left-0 right-0 xl:hidden 2xl:hidden">
+                <div class="flex justify-between items-center py-4 px-6">
+                    <div class="py-2">
+                        <a href="../index.html" class="w-20 h-20 object-contain">
+                            <img src="../src/images/logo.svg" alt="Logo" class="w-full h-full object-cover" />
+                        </a>
+                    </div>
+                    <div class="flex items-center gap-3 space-x-5">
+                        <a href="#" class="text-black hover:text-orange-500 pa-2"><i
+                                class="fa-solid fa-moon text-3xl"></i></a>
+                        <a id="open__Menu--Btn" href="javascript:void(0)"
+                            class="text-black hover:text-orange-500 pa-2"><i
+                                class="fa-solid fa-house-chimney-window text-3xl"></i></a>
+                    </div>
+                </div>
+            </footer>
+            <!-- COMMON SECTION -->
+        </main>
+    </div>
+
+    <script src="../src/js/script.js"></script>
+</body>
+
+</html>
