@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio -- About</title>
 
-    <!-- Tailwind CSS CDN -->
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="icon" href="../src/images/fav-icon.png" type="image/x-icon">
+    <title>Portfolio-Blog Details</title>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -26,9 +25,9 @@
     <div class="max-w-full h-[100vh] bg-[#f9f7f1] fixed inset-0 z-40 overflow-auto transform -translate-y-full opacity-0 transition-all duration-500"
         id="mobile__menu--section">
         <!-- top area -->
-        <div class="flex justify-between py-3 px-4 border-b border-gray-300">
-            <div class="py-2">
-                <a href="../index.html" class="w-20 h-20 object-contain">
+        <div class="flex justify-between items-center py-1 px-4 border-b border-gray-300">
+            <div class="py-2 w-20 h-20 object-contain">
+                <a href="index.html" class="w-full h-full object-contain">
                     <img src="../src/images/logo.svg" alt="Logo" class="w-full h-full object-cover" />
                 </a>
             </div>
@@ -56,7 +55,7 @@
                         </li>
                         <li class="px-4 py-3 border border-gray-300 border-b-0">
                             <a href="about.html"
-                                class="uppercase text-2xl md:text-3xl lg:text-3xl font-bold text-shadow-black mobile__menu--active">About</a>
+                                class="uppercase text-2xl md:text-3xl lg:text-3xl font-bold text-shadow-black">About</a>
                         </li>
                         <li class="px-4 py-3 border border-gray-300 border-b-0">
                             <a href="services.html"
@@ -87,7 +86,7 @@
 
                             <!-- Dropdown Menu -->
                             <div id="dropdownMenu"
-                                class="absolute px-5 z-10 top-full left-0 w-full max-w-64 bg-white border border-gray-300 overflow-hidden max-h-0 transition-all duration-500 ease-in-out origin-top">
+                                class="absolute px-5 z-10 top-full left-0 w-full max-w-64 bg-[#f9f7f1] border border-gray-300 overflow-hidden max-h-0 transition-all duration-500 ease-in-out origin-top">
                                 <a href="blog.html"
                                     class="block px-4 py-3 text-gray-500 uppercase text-2xl font-bold hover:text-black group">
                                     Blog
@@ -130,7 +129,7 @@
                             <div class="flex flex-col ml-3">
                                 <span class="text-md md:text-xl lg:text-sm font-medium text-gray-600">Phone</span>
                                 <a href="#"
-                                    class="font-medium text-md md:text-2xl lg:text-[18px] text-black hover:text-orange-500 duration-200">+938383474747</a>
+                                    class="font-medium text-md md:text-2xl lg:text-[18px] text-black hover:text-orange-500 duration-200">+01610008240</a>
                             </div>
                         </div>
                         <div class="flex items-center mb-5">
@@ -141,7 +140,7 @@
                             <div class="flex flex-col ml-3">
                                 <span class="text-sm md:text-xl lg:text-sm font-medium text-gray-600">Email</span>
                                 <a href="#"
-                                    class="font-medium text-md md:text-2xl lg:text-[18px] text-black hover:text-orange-500 duration-200">info@gmail.com</a>
+                                    class="font-medium text-md md:text-2xl lg:text-[18px] text-black hover:text-orange-500 duration-200">bijoyshaha38@gmail.com</a>
                             </div>
                         </div>
                         <div class="flex items-center mb-5">
@@ -150,9 +149,10 @@
                                 <i class="fa-solid fa-location-dot text-xl"></i>
                             </div>
                             <div class="ml-3">
-                                <a href="#"
-                                    class="font-medium text-md md:text-2xl lg:text-[18px] text-black hover:text-orange-500 duration-200">Canada
-                                    City, Office-02, Road-11,House-3B/B, Section-H</a>
+                                <a href="https://www.google.ca/maps/@23.6823193,88.6152174,201m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI1MDQyMi4wIKXMDSoJLDEwMjExNjQwSAFQAw%3D%3D"
+                                    target="_blank"
+                                    class="font-medium text-md md:text-2xl lg:text-[18px] text-black hover:text-orange-500 duration-200">
+                                    Bangladesh, kulna, Meherpur, Mujibnagor</a>
                             </div>
                         </div>
                     </div>
@@ -167,26 +167,25 @@
             </h4>
             <div class="py-7 border-t border-gray-300">
                 <div class="flex gap-2 flex-wrap">
-                    <a href="#"
+                    <!-- facebook -->
+                    <a href="https://www.facebook.com/" target="_blank"
+                        class="py-1 px-4 border border-gray-300 rounded-3xl text-md hover:bg-orange-500 hover:text-white hover:border-orange-500 duration-100">
+                        <i class="fa-brands fa-facebook-f text-sm"></i>
+                        Facebook
+                    </a>
+                    <!-- twitter -->
+                    <a href="https://x.com/BijoySaha918321?t=4zM1jlvQOzO7kyY7avmvDQ&s=09" target="_blank"
                         class="py-1 px-4 border border-gray-300 rounded-3xl text-md hover:bg-orange-500 hover:text-white hover:border-orange-500 duration-100">
                         <i class="fa-brands fa-x-twitter text-sm"></i>
                         Twitter
                     </a>
-                    <a href="#"
-                        class="py-1 border px-4 border-gray-300 rounded-3xl text-md hover:bg-orange-500 hover:text-white hover:border-orange-500 duration-100">
-                        <i class="fa-brands fa-instagram text-sm"></i>
-                        Instagram
-                    </a>
-                    <a href="#"
+                    <!-- twitter -->
+                    <a href="https://t.me/bijoysaha47" target="_blank"
                         class="py-1 px-4 border border-gray-300 rounded-3xl text-md hover:bg-orange-500 hover:text-white hover:border-orange-500 duration-100">
-                        <i class="fa-brands fa-behance text-sm"></i>
-                        Behance
+                        <i class="fa-brands fa-telegram text-sm"></i>
+                        Telegram
                     </a>
-                    <a href="#"
-                        class="py-1 px-4 border border-gray-300 rounded-3xl text-md hover:bg-orange-500 hover:text-white hover:border-orange-500 duration-100">
-                        <i class="fa-solid fa-basketball text-sm"></i>
-                        Dribbble
-                    </a>
+
                 </div>
             </div>
         </div>
@@ -208,29 +207,24 @@
                 <a href="#" class=""><i class="fa-solid fa-moon text-3xl hover:text-orange-600"></i></a>
             </div>
             <div class="pb-6 flex flex-col gap-3 align-center w-full">
-                <!-- Top Icon (X) -->
-                <a href="#" class="flex flex-col items-center group">
+                <!-- facebook -->
+                <a href="https://www.facebook.com/" target="_blank" class="flex flex-col items-center group">
+                    <i class="fa-brands fa-facebook-f text-2xl text-gray-500 group-hover:text-orange-500"></i>
+                    <div class="w-[100%] h-px bg-gray-300 mt-8"></div>
+                </a>
+                <!-- twiter -->
+                <a href="https://x.com/BijoySaha918321?t=4zM1jlvQOzO7kyY7avmvDQ&s=09" target="_blank"
+                    class="flex flex-col items-center group">
                     <i class="fab fa-x-twitter text-2xl text-gray-500 group-hover:text-orange-500"></i>
                     <div class="w-[100%] h-px bg-gray-300 mt-8"></div>
                 </a>
 
-                <!-- Instagram -->
-                <a href="#" class="flex flex-col items-center group">
-                    <i class="fab fa-instagram text-2xl text-gray-500 group-hover:text-orange-500"></i>
-                    <div class="w-full h-px bg-gray-300 mt-8"></div>
-                </a>
-
-                <!-- Behance -->
-                <a href="#" class="flex flex-col items-center group">
-                    <i class="fab fa-behance text-2xl text-gray-500 group-hover:text-orange-500"></i>
-                    <div class="w-full h-px bg-gray-300 mt-8"></div>
-                </a>
-
-                <!-- Dribbble -->
-                <a href="#" class="flex flex-col items-center group">
-                    <i class="fab fa-dribbble text-2xl text-gray-500 group-hover:text-orange-500"></i>
+                <!-- telegram -->
+                <a href="https://t.me/bijoysaha47" target="_blank" class="flex flex-col items-center group">
+                    <i class="fa-brands fa-telegram text-2xl text-gray-500 group-hover:text-orange-500"></i>
                     <!-- Last one: No Divider -->
                 </a>
+
             </div>
         </aside>
         <!-- COMMON SECTION -->
@@ -290,42 +284,52 @@
                                 </div>
                                 <div class="px-0 md:px-3 border-r border-orange-400">
                                     <span class="text-sm text-orange-500 font-medium">Location:</span>
-                                    <h6 class="text-md text-gray-700 font-semibold mt-0.5 capitalize">United Kingdom
+                                    <h6 class="text-md text-gray-700 font-semibold mt-0.5 capitalize">Bangladesh
                                     </h6>
                                 </div>
                                 <div class="px-0 md:px-3 py-2 border-r border-orange-400">
                                     <span class="text-sm text-orange-500 font-medium">Project Type:</span>
-                                    <h6 class="text-md text-gray-700 font-semibold mt-0.5 capitalize">Travel Agency
-                                        Website</h6>
+                                    <h6 class="text-md text-gray-700 font-semibold mt-0.5 capitalize">Pos Application
+                                    </h6>
                                 </div>
                                 <div class="px-0 md:px-3 py-2">
                                     <span class="text-sm text-orange-500 font-medium">Duration:</span>
-                                    <h6 class="text-md text-gray-700 font-semibold mt-0.5 capitalize">6 Month</h6>
+                                    <h6 class="text-md text-gray-700 font-semibold mt-0.5 capitalize">1 Month</h6>
                                 </div>
                             </div>
                             <!-- banners -->
                             <div class="py-5 md:py-10">
                                 <h3 class="text-3xl font-bold text-black">Project Overview</h3>
                                 <p class="text-md leading-[-2px] py-8 text-gray-500 font-normal">
-                                    Proin egestas ex sapien, non porta lectus lobortis ac. Vestibulum ante ipsum primis
-                                    in faucibus orci luctus en ultrices
-                                    posuere cubilia curae; Nullam finibus turpis turpis, a imperdiet orci ornare sedat.
-                                    Quisque scelerisque libero diam, nec
-                                    gravida mi placerat vel. Vestibulum ut nunc sed nunc molestie congue. Cras eget nisl
-                                    inholet lorem facilisis viverra sed
-                                    sit amet massa. Duisonabat fringilla consectetur turpis, quis dictum tellus interdum
-                                    condimentum. In hac habitasse
-                                    platea dictumst. Sed ut ultrices eros, eu tincidunt ex. Nunc in gravida nibh,
-                                    vestibulum egestas purus. In nibh sapien,
-                                    convallis nec pellentesque ac, rutrum nec diam</p>
+                                    A POS (Point of Sale) application is a system that enables businesses to complete
+                                    sales transactions efficiently, manage
+                                    inventory, track customer orders, and handle payments in one unified platform. A
+                                    well-designed POS system typically
+                                    includes features like product and service management, barcode scanning, customer
+                                    management, invoice and receipt
+                                    generation, multiple payment method integration (cash, card, digital wallets), and
+                                    real-time reporting on sales and
+                                    inventory. Advanced POS applications also offer employee management, discount
+                                    handling, returns and refunds processing,
+                                    loyalty programs, and cloud synchronization for multi-store management. In a
+                                    Laravel-based POS application, we can build
+                                    robust admin panels, secure APIs, real-time dashboards, and mobile-friendly
+                                    interfaces to ensure smooth operation across
+                                    different devices. A reliable POS system not only streamlines business operations
+                                    but also improves customer service,
+                                    minimizes errors, and provides valuable insights for business growth.</p>
                                 <p class="text-md leading-[-4px] text-gray-500 font-normal">
-                                    Libero diam, nec gravida mi placerat vel. Vestibulum ut nunc sed nunc molestie
-                                    congue. Cras eget nisl inhoet lorem
-                                    facilisis viverra sed sit amet massa. Duisonabat fringilla consectetur turpis, quis
-                                    dictum tellus interdum condimentum.
-                                    In hac habitasse platea dictumst. Sed ut ultrices eros, eu tincidunt ex. Nunc in
-                                    gravida nibh, vestibulum egestas purus.
-                                    In nibh sapien, convallis nec pellentesque ac, rutrum nec diam.</p>
+                                    A POS (Point of Sale) application is a system that enables businesses to complete
+                                    sales transactions efficiently, manage
+                                    inventory, track customer orders, and handle payments in one unified platform. A
+                                    well-designed POS system typically
+                                    includes features like product and service management, barcode scanning, customer
+                                    management, invoice and receipt
+                                    generation, multiple payment method integration (cash, card, digital wallets), and
+                                    real-time reporting on sales and
+                                    inventory. Advanced POS applications also offer employee management, discount
+                                    handling, returns and refunds processing,
+                                    loyalty programs, and cloud synchronization for multi-store management.</p>
                                 <div class="grid grid-cols-1 md:grid-cols-5 gap-4 max-w-6xl mx-auto pt-20">
 
                                     <!-- Big Left Image -->
@@ -396,7 +400,7 @@
                                             </li>
                                             <li
                                                 class="relative pl-4 text-gray-500 text-sm font-normal py-1 before:content-[''] before:w-2 before:h-2 before:rounded-full  before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:bg-orange-500">
-                                                Advertizing
+                                                Database Management
                                             </li>
                                         </ul>
 
@@ -506,11 +510,13 @@
                             <div class="py-5 md:py-10">
                                 <h3 class="text-3xl font-bold text-black">Project Overview</h3>
                                 <p class="text-md leading-[-2px] py-10 text-gray-500 font-normal">
-                                    urna Aenean onewaryzo eleifend vitae tellus a facilisis. Nunc posuere at augue eget
-                                    portat Intelg odion tellus,
-                                    dignissim fermentumara purus nec, consequat dapibus metus.Vivamus onem urna worlda
-                                    maurs faucibus at egestas quis,
-                                    fermentum egetonav neque.</p>
+                                    POS as Laravel-based application, we can build robust admin panels, secure APIs,
+                                    real-time dashboards, and
+                                    mobile-friendly interfaces to ensure smooth operation across different devices. A
+                                    reliable POS system not only
+                                    streamlines business operations but also improves customer service, minimizes
+                                    errors, and provides valuable insights for
+                                    business growth.</p>
                                 <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
                                     <div class="col-span-3  rounded-tl-[70px] overflow-hidden rounded-br-[70px]">
                                         <img src="../src/images/portfolio-details-img5.jpg"
@@ -528,11 +534,12 @@
                                         class="py-1 px-3 text-sm font-medium text-orange-500 bg-orange-300 rounded-md hover:text-white hover:bg-orange-500 hover:duration-300">Product
                                         Design</a>
                                     <ul class="flex gap-7">
-                                        <li><a href="#"
+                                        <li><a href="https://www.facebook.com/" target="_blank"
                                                 class="text-gray-700 font-semibold text-md hover:text-orange-500 hover:duration-300">
                                                 <i class="fa-brands fa-facebook-f"></i>
                                             </a></li>
-                                        <li><a href="#"
+                                        <li><a href="https://x.com/BijoySaha918321?t=4zM1jlvQOzO7kyY7avmvDQ&s=09"
+                                                target="_blank"
                                                 class="text-gray-700 font-semibold text-md hover:text-orange-500 hover:duration-300">
                                                 <i class="fa-brands fa-x-twitter"></i>
                                             </a></li>
@@ -621,9 +628,9 @@
             <!-- Footer Navigation mobile -->
             <footer
                 class="text-center z-10 bg-[#f9f7f1] border-t border-black w-full fixed bottom-0 left-0 right-0 xl:hidden 2xl:hidden">
-                <div class="flex justify-between items-center py-4 px-6">
-                    <div class="py-2">
-                        <a href="../index.html" class="w-20 h-20 object-contain">
+                <div class="flex justify-between items-center py-1 px-6">
+                    <div class="py-2 w-20 h-20 object-contain">
+                        <a href="index.html" class="w-full h-full">
                             <img src="../src/images/logo.svg" alt="Logo" class="w-full h-full object-cover" />
                         </a>
                     </div>
